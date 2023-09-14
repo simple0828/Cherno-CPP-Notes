@@ -9,19 +9,19 @@
       
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-7.3.6">
     
     
       
-        <title>87 Static Analysis in C++ - Cherno-CPP-Notes-ZH</title>
+        <title>Cherno-CPP-Notes-ZH</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -57,7 +57,7 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-blue" data-md-color-accent="cyan">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -65,6 +65,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#c-the-chernos-c-course-notes" class="md-skip">
+          跳转至
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -75,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Cherno-CPP-Notes-ZH" class="md-header__button md-logo" aria-label="Cherno-CPP-Notes-ZH" data-md-component="logo">
+    <a href="." title="Cherno-CPP-Notes-ZH" class="md-header__button md-logo" aria-label="Cherno-CPP-Notes-ZH" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              87 Static Analysis in C++
+              前言
             
           </span>
         </div>
@@ -203,7 +208,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Cherno-CPP-Notes-ZH" class="md-nav__button md-logo" aria-label="Cherno-CPP-Notes-ZH" data-md-component="logo">
+    <a href="." title="Cherno-CPP-Notes-ZH" class="md-nav__button md-logo" aria-label="Cherno-CPP-Notes-ZH" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -233,11 +238,73 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          前言
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
         前言
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    📚 课程进度 📚
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 课程进度 📚">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#english-version" class="md-nav__link">
+    🌐 English Version 🌐
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-progress" class="md-nav__link">
+    📚 Course Progress 📚
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -250,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1-50/05 How C++ Works.md" class="md-nav__link">
+      <a href="1-50/05 How C++ Works.md" class="md-nav__link">
         05 C++是怎样工作的
       </a>
     </li>
@@ -264,60 +331,111 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    📚 课程进度 📚
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 课程进度 📚">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#english-version" class="md-nav__link">
+    🌐 English Version 🌐
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-progress" class="md-nav__link">
+    📚 Course Progress 📚
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Nagi-ovo/Cherno-CPP-Notes/edit/master/docs/51-100/87 Static Analysis in C++.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/Nagi-ovo/Cherno-CPP-Notes/edit/master/docs/README.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>87 Static Analysis in C++</h1>
-                
-                <p>C++ 静态分析是在不实际执行代码的情况下对源代码或二进制代码进行分析的过程。这是通过检查代码中的模式、语法、结构和其他属性来完成的。静态分析的目的是在代码运行之前找出错误、漏洞或不符合编码标准的地方。</p>
-<p><img alt="" src="Pasted%20image%2020230811165148.png" /></p>
-<blockquote>
-<p>Cherno 所用的是PVS Studio，感兴趣的话可以自行了解。</p>
-</blockquote>
-<p>以下是C++静态分析的几个关键点：</p>
-<ol>
-<li>
-<p><strong>错误检测</strong>: 静态分析工具可以检测出许多常见的编程错误，例如空指针解引用、未初始化的变量、内存泄漏等。</p>
-</li>
-<li>
-<p><strong>代码质量提升</strong>: 静态分析可以帮助识别出可能导致未来错误的代码片段、冗余的代码或不符合编码规范的代码。</p>
-</li>
-<li>
-<p><strong>安全性</strong>: 许多安全漏洞可以通过静态分析工具在代码进入生产阶段之前被检测出来。这对于防止潜在的安全威胁至关重要。</p>
-</li>
-<li>
-<p><strong>性能</strong>: 某些静态分析工具可以提供有关可能的性能瓶颈的反馈。</p>
-</li>
-<li>
-<p><strong>代码审查的辅助</strong>: 使用静态分析工具可以使代码审查过程更加高效，因为它可以自动标识出需要关注的问题区域。</p>
-</li>
-<li>
-<p><strong>集成</strong>: 许多静态分析工具都可以集成到持续集成/持续部署(CI/CD)流程中，使得代码的检查和验证成为自动化构建的一部分。</p>
-</li>
-</ol>
-<p>常见的C++静态分析工具包括：</p>
+                <h1 id="c-the-chernos-c-course-notes">📘 C++ 学习笔记 | The Cherno's C++ Course Notes 📘</h1>
+<p>这个项目包含我在学习 <a href="https://www.youtube.com/watch?v=18c3MTX0PK0&amp;t=26s">the-Cherno 的 C++ 课程</a> 时所记的笔记。我分享出来希望对你也有帮助。🚀</p>
+<p>这个 README 文件将持续更新，跟随我在课程中的学习进度。</p>
+<p>✨ <strong>主要内容</strong> ✨</p>
 <ul>
-<li>
-<p><strong>Clang Static Analyzer</strong>: 这是 Clang 编译器的一部分，它可以检测 C、C++ 和 Objective-C 代码中的各种问题。</p>
-</li>
-<li>
-<p><strong>Cppcheck</strong>: 这是一个开源工具，用于检测 C 和 C++ 代码中的错误。</p>
-</li>
-<li>
-<p><strong>Coverity</strong>: 是一个商业工具，提供了广泛的静态分析功能，特别是针对安全性问题。</p>
-</li>
-<li>
-<p><strong>Visual Studio Code Analysis</strong>: 如果你使用 Visual Studio，它自带的代码分析工具也非常强大。</p>
-</li>
+<li>笔记</li>
+<li>课程的重点与要点</li>
+<li>我对课程中概念的理解和个人观点</li>
 </ul>
-<p>使用静态分析工具的一个常见误区是它们可以检测所有类型的错误或问题。实际上，任何工具都无法找到代码中的所有问题，但它们可以作为提高代码质量和安全性的有力工具。为了获得最佳结果，建议结合使用静态分析、动态分析和人工代码审查。</p>
+<hr />
+<h2 id="_1">📚 课程进度 📚</h2>
+<p>当前学习进度：90% 📈</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">█████████░</span>
+</code></pre></div>
+<hr />
+<p>我会一直保持更新，如果你对这个项目感兴趣或者它对你有帮助，欢迎 ⭐️ Star，这将是对我最大的支持与鼓励！ 🙏</p>
+<p>谢谢你的阅读！期待你的反馈和建议。</p>
+<hr />
+<p>📖 <strong>许可证</strong></p>
+<p>该项目遵循 MIT 许可证。请查看 <a href="LICENSE">LICENSE</a> 文件以获取更多信息。</p>
+<hr />
+<h3 id="english-version">🌐 English Version 🌐</h3>
+<p>This repository contains the notes I took while learning <a href="https://www.youtube.com/watch?v=18c3MTX0PK0&amp;t=26s">the-Cherno's C++ courses</a> on YouTube. I'm sharing them in hopes that they might be helpful to you too. 🚀</p>
+<p>This README will be regularly updated along with my learning progress in the course.</p>
+<p>✨ <strong>Content</strong> ✨</p>
+<ul>
+<li>Notes</li>
+<li>Key points from the course</li>
+<li>My understanding of the concepts and personal insights</li>
+</ul>
+<hr />
+<h2 id="course-progress">📚 Course Progress 📚</h2>
+<p>Current progress: 90% 📈</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">█████████░</span>
+</code></pre></div>
+<hr />
+<p>I will keep updating this, if you find it interesting or helpful, feel free to give it a ⭐️ Star. That would be the biggest support and encouragement for me! 🙏</p>
+<p>Thanks for reading! Looking forward to your feedback and suggestions.</p>
+<hr />
+<p>📖 <strong>License</strong></p>
+<p>This project is licensed under the terms of the MIT license. For more information see <a href="LICENSE">LICENSE</a>.</p>
                 
               
               
@@ -360,12 +478,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.tracking", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.tracking", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.annotate"], "search": "assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      <script src="assets/javascripts/bundle.b1047164.min.js"></script>
       
-        <script src="../../javascripts/katex.js"></script>
+        <script src="javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
