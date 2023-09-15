@@ -1683,8 +1683,8 @@
 <a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="p">{</span>
 <a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>那这里哪一个会被调用呢？
-<img alt="" src="../storage%20bag/Pasted%20image%2020230721134655.png" /></p>
+<p>那这里哪一个会被调用呢？</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230721134655.png" /></p>
 <p>这并不是 orange 在 apple 后导致的，而是因为其它原因。“Hello”其实是一个 const char[]数组，而不是一个 string，如果只有 apple 命名空间，会在 apple::print()中做一个<a href="40%20Implicit%20Conversion%20and%20the%20Explicit%20Keyword%20in%20C++.md#^cde452">隐式转换</a>，将 const char 数组转换为 string 对象。但是引入 orange 命名空间后，orange::print()匹配度更高，因为它的参数本来就是一个 const char*，不需要隐式转换。</p>
 <p>如果我们不用<code>using namespace</code>，而是简单地引入另一个库<code>apple::print()</code>就不会有这样的运行时错误。</p>
 <p>另一个要百分百避免的就是在头文件中使用 using namespace，永远不要这样做，把这些命名空间用在了你原本没有打算用的地方，谁知道它会 include 什么呢？任何大型项目中追踪起来都是很困难的，所以<strong>绝对不要在头文件中使用 using namespace！</strong></p>
