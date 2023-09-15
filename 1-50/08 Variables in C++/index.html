@@ -14,7 +14,7 @@
     
     
       
-        <title>08 Variables in C++ - Cherno-CPP-Notes-ZH</title>
+        <title>08 C++中的变量 - cherno-cpp-notes</title>
       
     
     
@@ -80,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Cherno-CPP-Notes-ZH" class="md-header__button md-logo" aria-label="Cherno-CPP-Notes-ZH" data-md-component="logo">
+    <a href="../.." title="cherno-cpp-notes" class="md-header__button md-logo" aria-label="cherno-cpp-notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -93,13 +93,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Cherno-CPP-Notes-ZH
+            cherno-cpp-notes
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              08 Variables in C++
+              08 C++中的变量
             
           </span>
         </div>
@@ -208,13 +208,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Cherno-CPP-Notes-ZH" class="md-nav__button md-logo" aria-label="Cherno-CPP-Notes-ZH" data-md-component="logo">
+    <a href="../.." title="cherno-cpp-notes" class="md-nav__button md-logo" aria-label="cherno-cpp-notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
-    Cherno-CPP-Notes-ZH
+    cherno-cpp-notes
   </label>
   
     <div class="md-nav__source">
@@ -257,6 +257,440 @@
     <li class="md-nav__item">
       <a href="../05%20How%20C%2B%2B%20Works/" class="md-nav__link">
         05 C++是怎样工作的
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20How%20the%20C%2B%2B%20Compiler%20Works/" class="md-nav__link">
+        06 C++编译器是如何工作的
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07%20How%20the%20C%2B%2B%20Linker%20Works/" class="md-nav__link">
+        07 C++链接器是如何工作的
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          08 C++中的变量
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        08 C++中的变量
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 变量类型
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 变量类型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-int" class="md-nav__link">
+    1.1 int
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 int">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    只想要正数怎么办？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2 常见的类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-char" class="md-nav__link">
+    1.3 char
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    1.4 存小数
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4 存小数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#float-double" class="md-nav__link">
+    float &amp; double
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-bool" class="md-nav__link">
+    1.5 bool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sizeof" class="md-nav__link">
+    2. sizeof 操作符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pointers-references" class="md-nav__link">
+    3. pointers &amp; references
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09%20Functions%20in%20C%2B%2B/" class="md-nav__link">
+        09 C++中的函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10%20C%2B%2B%20Header%20Files/" class="md-nav__link">
+        10 C++中的头文件
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11%20How%20to%20DEBUG%20C%2B%2B%20in%20Visual%20Studio/" class="md-nav__link">
+        11 如何在Visual Studio中调试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12%20CONDITIONS%20and%20BRANCHES%20in%20C%2B%2B/" class="md-nav__link">
+        12 C++条件与分支（if语句）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13%20%20BEST%20Visual%20Studio%20Setup%20for%20C%2B%2B%20Projects%21/" class="md-nav__link">
+        13 Visual Studio的最佳设置
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14%20Loops%20in%20C%2B%2B%28for%2Cwhile%20loops%29/" class="md-nav__link">
+        14 C++循环（for 、while）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15%20Control%20Flows%20in%20C%2B%2B%28continue%2Cbreak%2Creturn%29/" class="md-nav__link">
+        15 C++控制流语句
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16%20POINTERS%20in%20C%2B%2B/" class="md-nav__link">
+        16 C++指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17%20REFERENCES%20in%20C%2B%2B/" class="md-nav__link">
+        17 C++引用
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18%20CLASSES%20in%20C%2B%2B/" class="md-nav__link">
+        18 C++类
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19%20CLASSES%20vs%20STRUCTS%20in%20C%2B%2B/" class="md-nav__link">
+        19 C++类与结构体对比
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20%20How%20to%20Write%20a%20C%2B%2B%20Class/" class="md-nav__link">
+        20 如何写一个C++类
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21%20Static%20in%20C%2B%2B/" class="md-nav__link">
+        21 C++中的静态(static)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22%20Static%20for%20Classes%20and%20Structs%20in%20C%2B%2B/" class="md-nav__link">
+        22 C++类和结构体中的静态(static)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23%20Local%20Static%20in%20C%2B%2B/" class="md-nav__link">
+        23 C++中的局部静态（Local Static）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24%20ENUMS%20in%20C%2B%2B/" class="md-nav__link">
+        24 C++枚举
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25%20Constructors%20in%20C%2B%2B/" class="md-nav__link">
+        25 C++构造函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26%20Destructors%20in%20C%2B%2B/" class="md-nav__link">
+        26 C++析构函数
       </a>
     </li>
   
@@ -392,7 +826,7 @@
                   </a>
                 
                 
-                  <h1>08 Variables in C++</h1>
+                  <h1>08 C++中的变量</h1>
                 
                 <h2 id="1">1. 变量类型</h2>
 <p>C++中，不同变量类型之间==唯一的区别==就是==<em>size(大小)</em>==，即这个变量占用了多少内存</p>
@@ -480,6 +914,41 @@ anything except 0 for true</p>
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../07%20How%20the%20C%2B%2B%20Linker%20Works/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 07 C++链接器是如何工作的" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              07 C++链接器是如何工作的
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../09%20Functions%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 09 C++中的函数" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              09 C++中的函数
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
