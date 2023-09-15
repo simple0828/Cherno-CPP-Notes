@@ -14,7 +14,7 @@
     
     
       
-        <title>38 How to CREATE INSTANTIATE OBJECTS in C++ - cherno-cpp-notes</title>
+        <title>38 创建并初始化C++对象 - cherno-cpp-notes</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              38 How to CREATE INSTANTIATE OBJECTS in C++
+              38 创建并初始化C++对象
             
           </span>
         </div>
@@ -577,6 +577,431 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27%20Inheritance%20in%20C%2B%2B/" class="md-nav__link">
+        27 C++继承
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28%20Virtual%20Functions%20in%20C%2B%2B/" class="md-nav__link">
+        28 C++虚函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        29 C++接口（纯虚函数）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        30 C++可见性
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../31%20Arrays%20in%20C%2B%2B/" class="md-nav__link">
+        31 C++数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../32%20How%20Strings%20Work%20in%20C%2B%2B%20%28and%20how%20to%20use%20them%29/" class="md-nav__link">
+        32 C++字符串
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../33%20String%20Literals%20in%20C%2B%2B/" class="md-nav__link">
+        33 C++字符串字面量
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../34%20CONST%20in%20C%2B%2B/" class="md-nav__link">
+        34 C++中的const
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../35%20The%20Mutable%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        35 C++的mutable关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../36%20%20Member%20Initializer%20Lists%20in%20C%2B%2B%20%28Constructor%20Initializer%20List%29/" class="md-nav__link">
+        36 C++的成员初始化列表
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../37%20Ternary%20Operators%20in%20C%2B%2B%20%28Conditional%20Assignment%29/" class="md-nav__link">
+        37 C++的三元操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          38 创建并初始化C++对象
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        38 创建并初始化C++对象
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 栈上创建
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 栈上创建">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    什么时候像这样在栈上创建对象？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    为什么在有些情况下你不能这么做：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 堆上分配
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../39%20The%20NEW%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        39 C++ new关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../40%20Implicit%20Conversion%20and%20the%20Explicit%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        40 C++隐式转换与explicit关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../41%20OPERATORS%20and%20OPERATOR%20OVERLOADING%20in%20C%2B%2B/" class="md-nav__link">
+        41 C++运算符及其重载
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../42%20The%20%60this%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        42 C++的this关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
+        43 C++的对象生存期（栈作用域生存期）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../44%20SMART%20POINTERS%20in%20C%2B%2B/" class="md-nav__link">
+        44 C++的智能指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../45%20Copying%20and%20Copy%20Constructors%20in%20C%2B%2B/" class="md-nav__link">
+        45 C++的复制与拷贝构造函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../46%20The%20Arrow%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        46 C++的箭头操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
+        47 C++的动态数组（std::vector)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../48%20Optimizing%20the%20usage%20of%20std%20-%20-vector%20in%20C%2B%2B/" class="md-nav__link">
+        48 C++的std::vector使用优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../49%20Using%20Libraries%20in%20C%2B%2B%20%28Static%20Linking%29/" class="md-nav__link">
+        49 C++中使用库（静态链接）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../50%20Using%20Dynamic%20Libraries%20in%20C%2B%2B/" class="md-nav__link">
+        50 C++中使用动态库
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -653,17 +1078,17 @@
                   </a>
                 
                 
-                  <h1>38 How to CREATE INSTANTIATE OBJECTS in C++</h1>
+                  <h1>38 创建并初始化C++对象</h1>
                 
                 <p>怎么去实例化我们的类呢？一般我们有两种选择，这两种选择的区别是内存来自哪里，我们的对象实际上会创建在哪里。
-当我们在C++中创建对象时，它需要占用一些内存。即使我们写了一个完全为空的类：没有类成员，什么都没有，那它也必须要占用最少一个字节的内存，但这并不常见，因为我们的类中有很多的成员，它们需要被存储在某个地方。应用程序会把内存分为两个主要部分：<em>heap and stack</em>  <strong>堆</strong>和<strong>栈</strong></p>
-<p>在C++中，我们可以选择对象在哪里创建，在堆上还是在栈上，它们有不同的功能性差异。</p>
+当我们在 C++中创建对象时，它需要占用一些内存。即使我们写了一个完全为空的类：没有类成员，什么都没有，那它也必须要占用最少一个字节的内存，但这并不常见，因为我们的类中有很多的成员，它们需要被存储在某个地方。应用程序会把内存分为两个主要部分：<em>heap and stack</em> <strong>堆</strong>和<strong>栈</strong></p>
+<p>在 C++中，我们可以选择对象在哪里创建，在堆上还是在栈上，它们有不同的功能性差异。</p>
 <p>比如说<em>stack</em>对象有一个自动的<strong>生存周期</strong>，它们的生存周期是由它声明的地方的<em>scope</em>（作用域）决定的，一旦超出了这个作用域，它的内存很快就会被释放掉。因为当这个作用域结束时，栈会弹出，放在这个栈上、这个作用域的所有东西都会被释放。</p>
 <p>但<em>heap</em>不一样，堆是一个很大很神秘的地方，一旦你在堆上分配一个对象，你实际上已经在堆上创建了一个一直存在那里的对象。直到你决定：不需要它了，我想释放这个对象，你可以用那段内存做任何事。</p>
 <h2 id="1">1. 栈上创建</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#define LOG(x) std::cout &lt;&lt; x &lt;&lt; std::endl; </span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#define LOG(x) std::cout &lt;&lt; x &lt;&lt; std::endl;</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">using</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
@@ -690,39 +1115,41 @@
 </code></pre></div>
 <h4 id="_1">什么时候像这样在栈上创建对象？</h4>
 <p>几乎所有时候。如果你可以这样创建对象的话，那就这么来创建，这是基本规则。
-因为在C++中这是初始化对象最快的方式和最受管控的方式。</p>
+因为在 C++中这是初始化对象最快的方式和最受管控的方式。</p>
 <p>现在让我们来讨论下：</p>
 <h4 id="_2">为什么在有些情况下你不能这么做：</h4>
 <p>如果你想让它在函数生存期之外也能存活。</p>
 <ul>
-<li>
-<p>函数
+<li>函数</li>
+</ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">Function</span><span class="p">()</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="n">Entity</span><span class="w"> </span><span class="n">entity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Entity</span><span class="p">(</span><span class="s">&quot;Cherno&quot;</span><span class="p">);</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span><span class="w">                      </span><span class="c1">//一旦达到这个大括号，这个entity就会从内存中销毁</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>实例化
-<img alt="" src="Pasted%20image%2020230708151150.png" />
-断点调试到离开大括号范围时，e还是指向相同的地址，但是m_Name已经没有了。
-<img alt="" src="Pasted%20image%2020230708151324.png" />
-因为那个对象被释放掉了或者销毁了，这个叫Cherno的entity对象已经不存在了，它已经不存在栈结构里了。</p>
-</li>
+</code></pre></div>
+<ul>
+<li>实例化</li>
 </ul>
-<p>另一个我们不想在栈上分配的原因可能是：如果这个entity太大了，同时我们可能有很多的entity，我们就可能没有足够的空间来进行分配，因为栈通常都很小，一般是一两兆，这取决于你的平台和编译器。
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230708151150.png" /></p>
+<blockquote>
+<p>断点调试到离开大括号范围时，e 还是指向相同的地址，但是 m_Name 已经没有了。</p>
+</blockquote>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230708151324.png" /></p>
+<blockquote>
+<p>因为那个对象被释放掉了或者销毁了，这个叫 Cherno 的 entity 对象已经不存在了，它已经不存在栈结构里了。</p>
+</blockquote>
+<p>另一个我们不想在栈上分配的原因可能是：如果这个 entity 太大了，同时我们可能有很多的 entity，我们就可能没有足够的空间来进行分配，因为栈通常都很小，一般是一两兆，这取决于你的平台和编译器。
 因此你可能不得不在<em>heap</em>上进行分配。</p>
 <h2 id="2">2. 堆上分配</h2>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Entity</span><span class="o">*</span><span class="w"> </span><span class="n">entity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Entity</span><span class="p">(</span><span class="s">&quot;Cherno&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Entity</span><span class="o">*</span><span class="w"> </span><span class="n">entity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Entity</span><span class="p">(</span><span class="s">&quot;Cherno&quot;</span><span class="p">);</span>
 </code></pre></div>
-这里最大的区别不是那个指针，而是这个<em>new</em>关键字。
-我们调用<code>new Entity</code>时，实际发生的就是我们在堆上分配了内存，我们调用了构造函数，然后这个<code>new Entity</code>实际上会返回一个<code>Entity*</code>(指针)。它返回了这个entity在堆上分配的内存地址，这就是为什么我们要声明成<code>Entity*</code>类型。</p>
-<p>不过不应该到处使用<em>new</em>，简单来说就是因为性能的原因，在堆上分配要比在栈上花费更长的时间，而且如果在堆上分配的话，那你<strong>必须手动释放分配的内存</strong>
+<p>这里最大的区别不是那个指针，而是这个<em>new</em>关键字。
+我们调用<code>new Entity</code>时，实际发生的就是我们在堆上分配了内存，我们调用了构造函数，然后这个<code>new Entity</code>实际上会返回一个<code>Entity*</code>(指针)。它返回了这个 entity 在堆上分配的内存地址，这就是为什么我们要声明成<code>Entity*</code>类型。</p>
+<p>不过不应该到处使用<em>new</em>，简单来说就是因为性能的原因，在堆上分配要比在栈上花费更长的时间，而且如果在堆上分配的话，那你<strong>必须手动释放分配的内存</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">delete</span><span class="w"> </span><span class="n">entity</span><span class="p">;</span>
 </code></pre></div>
-用<em>new</em>就得<em>delete</em>，这是C++的运行方式。</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<p>用<em>new</em>就得<em>delete</em>，这是 C++的运行方式。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">{</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="n">Entity</span><span class="o">*</span><span class="w"> </span><span class="n">e</span><span class="p">;</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="p">{</span>
@@ -738,7 +1165,7 @@
 <a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="k">delete</span><span class="w"> </span><span class="n">e</span><span class="p">;</span>
 <a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="p">}</span>
 </code></pre></div>
-这里要注意的是，<code>entity</code> 是在内部作用域中创建的局部变量，其生命周期仅限于该作用域。当程序执行完离开该作用域时，<code>entity</code> 指针将超出其作用域，并且无法再访问到该指针。如果尝试在离开作用域后使用 <code>delete entity</code>，将导致未定义的行为，因为 <code>entity</code> 指针已经无效。</p>
+<p>这里要注意的是，<code>entity</code> 是在内部作用域中创建的局部变量，其生命周期仅限于该作用域。当程序执行完离开该作用域时，<code>entity</code> 指针将超出其作用域，并且无法再访问到该指针。如果尝试在离开作用域后使用 <code>delete entity</code>，将导致未定义的行为，因为 <code>entity</code> 指针已经无效。</p>
 <p>相反，<code>e</code> 是在外部作用域中定义的指针，并且将 <code>entity</code> 的值赋给了 <code>e</code>。因此，在离开内部作用域后，<code>e</code> 仍然保留了对动态分配的 <code>Entity</code> 对象的指向。因此，使用 <code>delete e</code> 可以正确地释放该对象的内存。</p>
 <p>所有如果对象非常大，或者你想显示地控制对象的生存周期，那就在堆上创建。
 如果不是这两种情况的话，那就在栈上分配，这更简单，而且会自动回收也更快。
@@ -764,6 +1191,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../37%20Ternary%20Operators%20in%20C%2B%2B%20%28Conditional%20Assignment%29/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 37 C++的三元操作符" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              37 C++的三元操作符
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../39%20The%20NEW%20Keyword%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 39 C++ new关键字" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              39 C++ new关键字
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

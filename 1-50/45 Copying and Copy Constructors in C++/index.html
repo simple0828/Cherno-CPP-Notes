@@ -14,7 +14,7 @@
     
     
       
-        <title>45 Copying and Copy Constructors in C++ - cherno-cpp-notes</title>
+        <title>45 C++的复制与拷贝构造函数 - cherno-cpp-notes</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              45 Copying and Copy Constructors in C++
+              45 C++的复制与拷贝构造函数
             
           </span>
         </div>
@@ -577,6 +577,418 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27%20Inheritance%20in%20C%2B%2B/" class="md-nav__link">
+        27 C++继承
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28%20Virtual%20Functions%20in%20C%2B%2B/" class="md-nav__link">
+        28 C++虚函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        29 C++接口（纯虚函数）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        30 C++可见性
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../31%20Arrays%20in%20C%2B%2B/" class="md-nav__link">
+        31 C++数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../32%20How%20Strings%20Work%20in%20C%2B%2B%20%28and%20how%20to%20use%20them%29/" class="md-nav__link">
+        32 C++字符串
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../33%20String%20Literals%20in%20C%2B%2B/" class="md-nav__link">
+        33 C++字符串字面量
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../34%20CONST%20in%20C%2B%2B/" class="md-nav__link">
+        34 C++中的const
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../35%20The%20Mutable%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        35 C++的mutable关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../36%20%20Member%20Initializer%20Lists%20in%20C%2B%2B%20%28Constructor%20Initializer%20List%29/" class="md-nav__link">
+        36 C++的成员初始化列表
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../37%20Ternary%20Operators%20in%20C%2B%2B%20%28Conditional%20Assignment%29/" class="md-nav__link">
+        37 C++的三元操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../38%20How%20to%20CREATE_INSTANTIATE%20OBJECTS%20in%20C%2B%2B/" class="md-nav__link">
+        38 创建并初始化C++对象
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../39%20The%20NEW%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        39 C++ new关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../40%20Implicit%20Conversion%20and%20the%20Explicit%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        40 C++隐式转换与explicit关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../41%20OPERATORS%20and%20OPERATOR%20OVERLOADING%20in%20C%2B%2B/" class="md-nav__link">
+        41 C++运算符及其重载
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../42%20The%20%60this%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        42 C++的this关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
+        43 C++的对象生存期（栈作用域生存期）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../44%20SMART%20POINTERS%20in%20C%2B%2B/" class="md-nav__link">
+        44 C++的智能指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          45 C++的复制与拷贝构造函数
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        45 C++的复制与拷贝构造函数
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 拷贝
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 浅拷贝
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 深拷贝（用拷贝构造函数）
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../46%20The%20Arrow%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        46 C++的箭头操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
+        47 C++的动态数组（std::vector)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../48%20Optimizing%20the%20usage%20of%20std%20-%20-vector%20in%20C%2B%2B/" class="md-nav__link">
+        48 C++的std::vector使用优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../49%20Using%20Libraries%20in%20C%2B%2B%20%28Static%20Linking%29/" class="md-nav__link">
+        49 C++中使用库（静态链接）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../50%20Using%20Dynamic%20Libraries%20in%20C%2B%2B/" class="md-nav__link">
+        50 C++中使用动态库
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -640,19 +1052,19 @@
                   </a>
                 
                 
-                  <h1>45 Copying and Copy Constructors in C++</h1>
+                  <h1>45 C++的复制与拷贝构造函数</h1>
                 
-                <p>拷贝以及C++拷贝构造函数</p>
+                <p>拷贝以及 C++拷贝构造函数</p>
 <h2 id="1">1. 拷贝</h2>
 <p><em>copy</em>（拷贝）指的是要求复制数据，复制内存。
 当我们想把一个对象或者<em>primitive</em>（原语）或者一段数据从一个地方复制到另一个地方时，我们实际上有两个副本。我们要避免不必要的复制，因为这样会浪费性能。</p>
-<p>理解复制是如何在C++中工作的，如何避免让它工作，或者在你不想复制的时候避免复制，对于理解语言以及能高效正确地编写C++代码非常重要。</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<p>理解复制是如何在 C++中工作的，如何避免让它工作，或者在你不想复制的时候避免复制，对于理解语言以及能高效正确地编写 C++代码非常重要。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
 </code></pre></div>
-这里实际上是创建了一个a的副本，a和b是两个独立的变量，它们有不同的内存地址。所以如果我们把b改为3，a仍然是2。</p>
+<p>这里实际上是创建了一个 a 的副本，a 和 b 是两个独立的变量，它们有不同的内存地址。所以如果我们把 b 改为 3，a 仍然是 2。</p>
 <p>在类中，也是同样的道理。</p>
-<p>复制指针就不一样了，指向的内容是同一个，修改b也会影响a。
+<p>复制指针就不一样了，指向的内容是同一个，修改 b 也会影响 a。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">Vector2</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
@@ -665,8 +1077,8 @@
 <a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="n">b</span><span class="o">-&gt;</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
 <a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;x:&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="o">-&gt;</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;y:&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="o">-&gt;</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w">  </span><span class="c1">// x:5,y:0</span>
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">}</span>
-</code></pre></div></p>
-<p>所以除了引用外，每当你编写一个变量被赋值给另一个变量的代码时，你总是在复制。
+</code></pre></div>
+<p>所以除了引用外，每当你编写一个变量被赋值给另一个变量的代码时，你总是在复制。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
@@ -703,24 +1115,24 @@
 <a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
 <a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="p">}</span>
 </code></pre></div>
-可以看到输出结果有很多随机字符，正是因为没有空终止字符导致的。
-<img alt="" src="Pasted%20image%2020230711210743.png" />
+<p>可以看到输出结果有很多随机字符，正是因为没有空终止字符导致的。
+<img alt="" src="../storage%20bag/Pasted%20image%2020230711210743.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">m_Buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">char</span><span class="p">[</span><span class="n">m_Size</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">];</span><span class="w"> </span><span class="c1">//增加空终止符的位置，也可以用以后会学到的strcpy</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">m_Buffer</span><span class="p">[</span><span class="n">m_Size</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">//添加空终止符</span>
 </code></pre></div>
-现在可以正常输出“Cherno”了。
-再回去看下String类部分的代码，有什么尚存的问题吗？</p>
-<p>答案是有一个内存泄漏。
+<p>现在可以正常输出“Cherno”了。
+再回去看下 String 类部分的代码，有什么尚存的问题吗？</p>
+<p>答案是有一个内存泄漏。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">m_Buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">char</span><span class="p">[</span><span class="n">m_Size</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">];</span>
 </code></pre></div>
-我们分配这个new char时，并没有配套的<code>delete</code>。当然如果你用智能指针或者vector是不需要delete的。
-于是我们在String类的析构函数中修改：
+<p>我们分配这个 new char 时，并没有配套的<code>delete</code>。当然如果你用智能指针或者 vector 是不需要 delete 的。
+于是我们在 String 类的析构函数中修改：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">~</span><span class="n">String</span><span class="p">()</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">{</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="k">delete</span><span class="p">[]</span><span class="w"> </span><span class="n">m_Buffer</span><span class="p">;</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">}</span>
-</code></pre></div></p>
-<p>接下来我们复制这个string并且尝试打印：
+</code></pre></div>
+<p>接下来我们复制这个 string 并且尝试打印：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">{</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span>
@@ -732,13 +1144,13 @@
 <a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
 <a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="p">}</span>
 </code></pre></div>
-Opps，输出字符串执行到cin.get()按回车后程序崩溃了。调出callstack也看不懂，那到底是什么让我们的程序崩溃了？
-<img alt="" src="Pasted%20image%2020230711212436.png" /></p>
-<p>我们复制这个String时，C++自动为我们做的是它将所有类成员变量，而这些成员变量组成了类（实例的内存空间），它是由一个char*和一个unsigned int组成的，它将这些值复制到了一个新的内存地址里面，这个新的内存地址包含了这个second字符串。</p>
+<p>Opps，输出字符串执行到 cin.get()按回车后程序崩溃了。调出 callstack 也看不懂，那到底是什么让我们的程序崩溃了？
+<img alt="" src="../storage%20bag/Pasted%20image%2020230711212436.png" /></p>
+<p>我们复制这个 String 时，C++自动为我们做的是它将所有类成员变量，而这些成员变量组成了类（实例的内存空间），它是由一个 char*和一个 unsigned int 组成的，它将这些值复制到了一个新的内存地址里面，这个新的内存地址包含了这个 second 字符串。</p>
 <h2 id="2">2. 浅拷贝</h2>
-<p>现在问题来了，内存中有两个String，因为它们直接进行了复制，这种复制被称为<em>shallow copy</em>（浅拷贝）。它所做的是复制这个char*，内存中的两个String对象有相同的char*的值，换句话说就是有相同的内存地址。这个m_Buffer的内存地址，对于这两个String对象来说是相同的，所以程序会崩溃的原因是当我们到达作用域的尽头时，这两个String都被销毁了，析构函数会被调用，然后执行<code>delete[] m_Buffer</code>两次，程序试图两次释放同一个内存块。这就是为什么程序会崩溃——因为内存已经释放了，不再是我们的了，我们无法再次释放它。
-<img alt="" src="Pasted%20image%2020230711213515.png" /></p>
-<p>那假设我们想要修改second字符串，不完全修改，只是将字母e改成字母a，变成“Charno”
+<p>现在问题来了，内存中有两个 String，因为它们直接进行了复制，这种复制被称为<em>shallow copy</em>（浅拷贝）。它所做的是复制这个 char*，内存中的两个 String 对象有相同的 char*的值，换句话说就是有相同的内存地址。这个 m_Buffer 的内存地址，对于这两个 String 对象来说是相同的，所以程序会崩溃的原因是当我们到达作用域的尽头时，这两个 String 都被销毁了，析构函数会被调用，然后执行<code>delete[] m_Buffer</code>两次，程序试图两次释放同一个内存块。这就是为什么程序会崩溃——因为内存已经释放了，不再是我们的了，我们无法再次释放它。
+<img alt="" src="../storage%20bag/Pasted%20image%2020230711213515.png" /></p>
+<p>那假设我们想要修改 second 字符串，不完全修改，只是将字母 e 改成字母 a，变成“Charno”</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">second</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">//还需要操作符重载</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">String</span>
@@ -751,15 +1163,15 @@ Opps，输出字符串执行到cin.get()按回车后程序崩溃了。调出call
 <a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="p">......</span>
 <a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">}</span>
 </code></pre></div>
-为啥会是俩Charno呢？
-<img alt="" src="Pasted%20image%2020230711214022.png" /></p>
-<p>我们真正需要做的是，分配一个新的char数组，来存储复制的字符串。而我们现在做的是复制指针，两个字符串对象指向完全相同的内存缓冲区，它同时改变了它们，因为它们指向同一个内存块。或者当我们删除的时候它会把它们两个都删除，因为它们指向同一个内存块。</p>
+<p>为啥会是俩 Charno 呢？
+<img alt="" src="../storage%20bag/Pasted%20image%2020230711214022.png" /></p>
+<p>我们真正需要做的是，分配一个新的 char 数组，来存储复制的字符串。而我们现在做的是复制指针，两个字符串对象指向完全相同的内存缓冲区，它同时改变了它们，因为它们指向同一个内存块。或者当我们删除的时候它会把它们两个都删除，因为它们指向同一个内存块。</p>
 <h2 id="3">3. 深拷贝（用拷贝构造函数）</h2>
 <p>我们希望第二个字符串拥有自己的指针，以拥有自己唯一的内存块。
 我们能做到这一点的方式是执行一种叫<em>deep copy</em>（深拷贝）的东西，也就是说我们实际复制了整个对象，不是我们上面提到的那种浅拷贝：这个对象是由什么构成的。浅拷贝不会去到指针的内容或者指针所指向的地方，也不会去复制它。</p>
 <p>而深拷贝是根据定义复制整个对象。我们这里用<em>copy constructor</em>==拷贝构造函数==的方式。</p>
 <p>拷贝构造函数是一个构造函数，当你复制第二个字符串时，它会被调用。当你把一个字符串赋值给一个也是字符串的对象时，（当你试图创建一个新的变量并给它分配另一个变量，而这个变量和你正在创建的变量类型相同时），你复制这个变量，也就是所谓的拷贝构造函数。</p>
-<p>C++会自动为你提供一个拷贝构造函数：
+<p>C++会自动为你提供一个拷贝构造函数：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">String</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">{</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">......</span>
@@ -767,8 +1179,8 @@ Opps，输出字符串执行到cin.get()按回车后程序崩溃了。调出call
 <a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">......</span>
 <a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">}</span>
 </code></pre></div>
-它所做的就是内存复制，将other对象的内存浅拷贝进这些成员变量。
-所以如果我们自己写的话，它可能看起来像这样：
+<p>它所做的就是内存复制，将 other 对象的内存浅拷贝进这些成员变量。
+所以如果我们自己写的话，它可能看起来像这样：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">String</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">m_Buffer</span><span class="p">((</span><span class="n">other</span><span class="p">.</span><span class="n">m_Buffer</span><span class="p">)),</span><span class="w"> </span><span class="n">m_Size</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">m_Size</span><span class="p">){};</span>
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
@@ -778,12 +1190,12 @@ Opps，输出字符串执行到cin.get()按回车后程序崩溃了。调出call
 <a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="n">memcpy</span><span class="p">(</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">other</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">String</span><span class="p">));</span>
 <a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="p">}</span>
 </code></pre></div>
-这就是C++默认提供的拷贝构造函数</p>
-<p>如果我们决定不需要拷贝构造函数，不允许复制，我们可以将这个拷贝函数声明为<code>delete</code>:
+<p>这就是 C++默认提供的拷贝构造函数</p>
+<p>如果我们决定不需要拷贝构造函数，不允许复制，我们可以将这个拷贝函数声明为<code>delete</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">String</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">delete</span><span class="p">;</span>
 </code></pre></div>
-这就是<a href="../44%20SMART%20POINTERS%20in%20C%2B%2B/#^f2eddc">unique_ptr</a>所做的。</p>
-<p>但我们这里想找到我们自己的拷贝构造函数：
+<p>这就是<a href="../44%20SMART%20POINTERS%20in%20C%2B%2B/#^f2eddc">unique_ptr</a>所做的。</p>
+<p>但我们这里想找到我们自己的拷贝构造函数：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">String</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">m_Size</span><span class="p">((</span><span class="n">other</span><span class="p">.</span><span class="n">m_Size</span><span class="p">))</span>
 <a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">{</span>
@@ -791,26 +1203,26 @@ Opps，输出字符串执行到cin.get()按回车后程序崩溃了。调出call
 <a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="n">memcpy</span><span class="p">(</span><span class="n">m_Buffer</span><span class="p">,</span><span class="w"> </span><span class="n">other</span><span class="p">.</span><span class="n">m_Buffer</span><span class="p">,</span><span class="w"> </span><span class="n">m_Size</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
 <a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="p">}</span>
 </code></pre></div>
-得到了我们想要的结果，程序也能成功终止。
-<img alt="" src="Pasted%20image%2020230711220047.png" /></p>
+<p>得到了我们想要的结果，程序也能成功终止。
+<img alt="" src="../storage%20bag/Pasted%20image%2020230711220047.png" /></p>
 <p>增加一个用来打印的函数，结果正常，但是实际上我们不必要进行这个复制。
 在拷贝构造函数中加入一条指示（输出某字符串）：
-<img alt="" src="Pasted%20image%2020230711220355.png" />
-我们看上去只做了一次复制，但是当我们把它传递给这个函数时，我们实际上做了2次额外的复制操作。每次调用析构函数删除内存，实际上是完全没有必要的。
-我们真正想做的是将现有的字符串直接进入这个PrintString函数，我们知道自己不需要复制得到另一个副本，我们可以直接引用现有的string。</p>
+<img alt="" src="../storage%20bag/Pasted%20image%2020230711220355.png" />
+我们看上去只做了一次复制，但是当我们把它传递给这个函数时，我们实际上做了 2 次额外的复制操作。每次调用析构函数删除内存，实际上是完全没有必要的。
+我们真正想做的是将现有的字符串直接进入这个 PrintString 函数，我们知道自己不需要复制得到另一个副本，我们可以直接引用现有的 string。</p>
 <p>我们可以通过<em>referece</em>（引用）来实现。
-<img alt="" src="Pasted%20image%2020230711220922.png" />
-只有在我们给第二个对象赋值为string时有一次复制。</p>
-<p>如果我们突然决定在PrintString函数中还是要复制，只需要：
+<img alt="" src="../storage%20bag/Pasted%20image%2020230711220922.png" />
+只有在我们给第二个对象赋值为 string 时有一次复制。</p>
+<p>如果我们突然决定在 PrintString 函数中还是要复制，只需要：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">PrintString</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="p">)</span>
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="p">{</span>
 <a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">copy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">string</span><span class="p">;</span>
 <a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="p">}</span>
-</code></pre></div></p>
-<p>想告诉你的是，应该总是要通过const引用去传递对象，以后会深入地探讨它的优化（因为在某些情况下复制可能会更快）。但无论如何，在基础使用中用const引用更好。
-总是要用const引用传递对象，因为你可以在你写的的函数的内部决定是否要复制，但是你没有理由到处复制，会拖慢你的程序。
-重要的事情说三遍，当你传递字符串的时候，不管这个字符串是你自己的String类还是标准库里的String（std::string)，总是要通过const引用来传递。除了减少拷贝外，这样还有其它好处，后续再谈。</p>
+</code></pre></div>
+<p>想告诉你的是，应该总是要通过 const 引用去传递对象，以后会深入地探讨它的优化（因为在某些情况下复制可能会更快）。但无论如何，在基础使用中用 const 引用更好。
+总是要用 const 引用传递对象，因为你可以在你写的的函数的内部决定是否要复制，但是你没有理由到处复制，会拖慢你的程序。
+重要的事情说三遍，当你传递字符串的时候，不管这个字符串是你自己的 String 类还是标准库里的 String（std::string)，总是要通过 const 引用来传递。除了减少拷贝外，这样还有其它好处，后续再谈。</p>
                 
               
               
@@ -831,6 +1243,41 @@ Opps，输出字符串执行到cin.get()按回车后程序崩溃了。调出call
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../44%20SMART%20POINTERS%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 44 C++的智能指针" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              44 C++的智能指针
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../46%20The%20Arrow%20Operator%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 46 C++的箭头操作符" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              46 C++的箭头操作符
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

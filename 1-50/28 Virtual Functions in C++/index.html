@@ -14,7 +14,7 @@
     
     
       
-        <title>28 Virtual Functions in C++ - cherno-cpp-notes</title>
+        <title>28 C++虚函数 - cherno-cpp-notes</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              28 Virtual Functions in C++
+              28 C++虚函数
             
           </span>
         </div>
@@ -577,6 +577,424 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27%20Inheritance%20in%20C%2B%2B/" class="md-nav__link">
+        27 C++继承
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          28 C++虚函数
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        28 C++虚函数
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 虚函数
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 虚函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    一个更好的例子
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-runtime" class="md-nav__link">
+    2. runtime
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        29 C++接口（纯虚函数）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        30 C++可见性
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../31%20Arrays%20in%20C%2B%2B/" class="md-nav__link">
+        31 C++数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../32%20How%20Strings%20Work%20in%20C%2B%2B%20%28and%20how%20to%20use%20them%29/" class="md-nav__link">
+        32 C++字符串
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../33%20String%20Literals%20in%20C%2B%2B/" class="md-nav__link">
+        33 C++字符串字面量
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../34%20CONST%20in%20C%2B%2B/" class="md-nav__link">
+        34 C++中的const
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../35%20The%20Mutable%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        35 C++的mutable关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../36%20%20Member%20Initializer%20Lists%20in%20C%2B%2B%20%28Constructor%20Initializer%20List%29/" class="md-nav__link">
+        36 C++的成员初始化列表
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../37%20Ternary%20Operators%20in%20C%2B%2B%20%28Conditional%20Assignment%29/" class="md-nav__link">
+        37 C++的三元操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../38%20How%20to%20CREATE_INSTANTIATE%20OBJECTS%20in%20C%2B%2B/" class="md-nav__link">
+        38 创建并初始化C++对象
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../39%20The%20NEW%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        39 C++ new关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../40%20Implicit%20Conversion%20and%20the%20Explicit%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        40 C++隐式转换与explicit关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../41%20OPERATORS%20and%20OPERATOR%20OVERLOADING%20in%20C%2B%2B/" class="md-nav__link">
+        41 C++运算符及其重载
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../42%20The%20%60this%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        42 C++的this关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
+        43 C++的对象生存期（栈作用域生存期）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../44%20SMART%20POINTERS%20in%20C%2B%2B/" class="md-nav__link">
+        44 C++的智能指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../45%20Copying%20and%20Copy%20Constructors%20in%20C%2B%2B/" class="md-nav__link">
+        45 C++的复制与拷贝构造函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../46%20The%20Arrow%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        46 C++的箭头操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
+        47 C++的动态数组（std::vector)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../48%20Optimizing%20the%20usage%20of%20std%20-%20-vector%20in%20C%2B%2B/" class="md-nav__link">
+        48 C++的std::vector使用优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../49%20Using%20Libraries%20in%20C%2B%2B%20%28Static%20Linking%29/" class="md-nav__link">
+        49 C++中使用库（静态链接）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../50%20Using%20Dynamic%20Libraries%20in%20C%2B%2B/" class="md-nav__link">
+        50 C++中使用动态库
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -646,12 +1064,12 @@
                   </a>
                 
                 
-                  <h1>28 Virtual Functions in C++</h1>
+                  <h1>28 C++虚函数</h1>
                 
                 <h2 id="1">1. 虚函数</h2>
 <p>虚函数可以让我们在子类中重写方法
-举例：B是A的子类，如果我们如果在A类里新建一个方法并把它标记为虚函数，我们可以再B类中重写这个方法让它去做其他事情。</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+举例：B 是 A 的子类，如果我们如果在 A 类里新建一个方法并把它标记为虚函数，我们可以再 B 类中重写这个方法让它去做其他事情。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#include</span><span class="w">  </span><span class="cpf">&lt;string&gt;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">class</span><span class="w"> </span><span class="nc">Entity</span>
@@ -685,8 +1103,8 @@
 <a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
 <a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="p">}</span>
 </code></pre></div>
-<img alt="" src="Pasted%20image%2020230704181515.png" />
-这里虽然我们指向的是一个Entity <em>pointer</em>，但是它实际上是一个Player类的实例。</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230704181515.png" />
+这里虽然我们指向的是一个 Entity <em>pointer</em>，但是它实际上是一个 Player 类的实例。</p>
 <h3 id="_1">一个更好的例子</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">PrintName</span><span class="p">(</span><span class="n">Entity</span><span class="o">*</span><span class="w"> </span><span class="n">entity</span><span class="p">)</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
@@ -694,7 +1112,7 @@
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">{</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">Entity</span><span class="o">*</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Entity</span><span class="p">();</span><span class="w">  </span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">Entity</span><span class="o">*</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Entity</span><span class="p">();</span>
 <a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="n">PrintName</span><span class="p">(</span><span class="n">e</span><span class="p">);</span><span class="w">                             </span><span class="c1">//Entity</span>
 <a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="n">Player</span><span class="o">*</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Player</span><span class="p">(</span><span class="s">&quot;Cherno&quot;</span><span class="p">);</span>
 <a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="n">PrintName</span><span class="p">(</span><span class="n">p</span><span class="p">);</span><span class="w">                             </span><span class="c1">//Entity</span>
@@ -703,7 +1121,7 @@
 <a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">}</span>
 </code></pre></div>
 <p>原因是如果我们在类中正常声明函数或者方法，当它去调用这个方法的时候，它总会去调用属于这个类型的方法</p>
-<p>这里我们希望C++编译器知道我们要调用的第二个传入的其实是一个Player，所以请调用Player的GetName。
+<p>这里我们希望 C++编译器知道我们要调用的第二个传入的其实是一个 Player，所以请调用 Player 的 GetName。
 这就是要用到<em>virtual function</em>虚函数的地方了。</p>
 <p>虚函数引入了一种要动态分派的方法，一般通过<em>vtable</em>(虚表)来实现编译。
 虚表就是一个包含类中所有虚函数映射的列表，通过虚表我们就可以在运行时找到争取的被重写的函数。
@@ -714,19 +1132,19 @@
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">GetName</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;Entity&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">   </span><span class="c1">//设置为虚函数方法</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">};</span>
 </code></pre></div>
-<p>现在就可以正确打印Entity和Cherno了
+<p>现在就可以正确打印 Entity 和 Cherno 了
 <img alt="" src="Pasted%20image%2020230704182832.png" /></p>
-<p>C++11新标准允许给被重写的函数用<code>override</code>关键字标记
+<p>C++11 新标准允许给被重写的函数用<code>override</code>关键字标记</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">GetName</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">m_Name</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div></p>
-<p>不加也没报错，但是加了可读性更好，让我们直观地知道这个函数被重写了，还能帮助我们预防bug，比如拼写错误等。
+</code></pre></div>
+<p>不加也没报错，但是加了可读性更好，让我们直观地知道这个函数被重写了，还能帮助我们预防 bug，比如拼写错误等。
 <img alt="" src="Pasted%20image%2020230704183318.png" />
-比如这里N写成小写n，就有报错，因为基类中没有一个这样的函数给我们重写</p>
+比如这里 N 写成小写 n，就有报错，因为基类中没有一个这样的函数给我们重写</p>
 <h2 id="2-runtime">2. runtime</h2>
 <p>虚函数不是没有成本的，有两种虚函数运行时的花费。</p>
 <p>一种就是需要额外的内存用来存储虚表，这样我们就可以分配到正确的函数，基类里还有一个指针成员指向虚表。</p>
 <p>另一种就是每次调用虚函数的时候，我们必须要遍历虚表去找到最终要运行的函数，这也是额外的性能损失。</p>
-<p>除非是CPU很差的嵌入式平台，不会告诉你说：因为性能问题而别去用虚函数，因为它造成的影响很小，你可能根本察觉不到。</p>
+<p>除非是 CPU 很差的嵌入式平台，不会告诉你说：因为性能问题而别去用虚函数，因为它造成的影响很小，你可能根本察觉不到。</p>
                 
               
               
@@ -747,6 +1165,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../27%20Inheritance%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 27 C++继承" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              27 C++继承
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-footer__link md-footer__link--next" aria-label="下一页: 29 C++接口（纯虚函数）" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              29 C++接口（纯虚函数）
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

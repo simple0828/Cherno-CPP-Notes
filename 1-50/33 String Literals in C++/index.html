@@ -14,7 +14,7 @@
     
     
       
-        <title>33 String Literals in C++ - cherno-cpp-notes</title>
+        <title>33 C++字符串字面量 - cherno-cpp-notes</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              33 String Literals in C++
+              33 C++字符串字面量
             
           </span>
         </div>
@@ -577,6 +577,424 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27%20Inheritance%20in%20C%2B%2B/" class="md-nav__link">
+        27 C++继承
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28%20Virtual%20Functions%20in%20C%2B%2B/" class="md-nav__link">
+        28 C++虚函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        29 C++接口（纯虚函数）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        30 C++可见性
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../31%20Arrays%20in%20C%2B%2B/" class="md-nav__link">
+        31 C++数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../32%20How%20Strings%20Work%20in%20C%2B%2B%20%28and%20how%20to%20use%20them%29/" class="md-nav__link">
+        32 C++字符串
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          33 C++字符串字面量
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        33 C++字符串字面量
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wide-char" class="md-nav__link">
+    wide char
+  </a>
+  
+    <nav class="md-nav" aria-label="wide char">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wchar_t-char16_t" class="md-nav__link">
+    wchar_t 和 char16_t 的区别？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r" class="md-nav__link">
+    R 方法
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../34%20CONST%20in%20C%2B%2B/" class="md-nav__link">
+        34 C++中的const
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../35%20The%20Mutable%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        35 C++的mutable关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../36%20%20Member%20Initializer%20Lists%20in%20C%2B%2B%20%28Constructor%20Initializer%20List%29/" class="md-nav__link">
+        36 C++的成员初始化列表
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../37%20Ternary%20Operators%20in%20C%2B%2B%20%28Conditional%20Assignment%29/" class="md-nav__link">
+        37 C++的三元操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../38%20How%20to%20CREATE_INSTANTIATE%20OBJECTS%20in%20C%2B%2B/" class="md-nav__link">
+        38 创建并初始化C++对象
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../39%20The%20NEW%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        39 C++ new关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../40%20Implicit%20Conversion%20and%20the%20Explicit%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        40 C++隐式转换与explicit关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../41%20OPERATORS%20and%20OPERATOR%20OVERLOADING%20in%20C%2B%2B/" class="md-nav__link">
+        41 C++运算符及其重载
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../42%20The%20%60this%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        42 C++的this关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
+        43 C++的对象生存期（栈作用域生存期）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../44%20SMART%20POINTERS%20in%20C%2B%2B/" class="md-nav__link">
+        44 C++的智能指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../45%20Copying%20and%20Copy%20Constructors%20in%20C%2B%2B/" class="md-nav__link">
+        45 C++的复制与拷贝构造函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../46%20The%20Arrow%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        46 C++的箭头操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
+        47 C++的动态数组（std::vector)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../48%20Optimizing%20the%20usage%20of%20std%20-%20-vector%20in%20C%2B%2B/" class="md-nav__link">
+        48 C++的std::vector使用优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../49%20Using%20Libraries%20in%20C%2B%2B%20%28Static%20Linking%29/" class="md-nav__link">
+        49 C++中使用库（静态链接）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../50%20Using%20Dynamic%20Libraries%20in%20C%2B%2B/" class="md-nav__link">
+        50 C++中使用动态库
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -611,8 +1029,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wchar_tchar16_t" class="md-nav__link">
-    wchar_t和char16_t的区别？
+  <a href="#wchar_t-char16_t" class="md-nav__link">
+    wchar_t 和 char16_t 的区别？
   </a>
   
 </li>
@@ -624,7 +1042,7 @@
       
         <li class="md-nav__item">
   <a href="#r" class="md-nav__link">
-    R方法
+    R 方法
   </a>
   
 </li>
@@ -646,21 +1064,21 @@
                   </a>
                 
                 
-                  <h1>33 String Literals in C++</h1>
+                  <h1>33 C++字符串字面量</h1>
                 
-                <p>字符串字面量
-<img alt="" src="Pasted%20image%2020230705140428.png" />
-为什么大小是7？因为还有一个<code>00</code>的额外的<a href="../32%20How%20Strings%20Work%20in%20C%2B%2B%20%28and%20how%20to%20use%20them%29/#^26e746">空终止符</a>：<code>"Cherno\0"</code>
-<img alt="" src="Pasted%20image%2020230705140940.png" />
+                <p>字符串字面量</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230705140428.png" /></p>
+<p>为什么大小是 7？因为还有一个<code>00</code>的额外的<a href="../32%20How%20Strings%20Work%20in%20C%2B%2B%20%28and%20how%20to%20use%20them%29/#^26e746">空终止符</a>：<code>"Cherno\0"</code></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230705140940.png" />
 两个<code>.</code>代表<code>00</code>的位置</p>
-<p><img alt="" src="Pasted%20image%2020230705141715.png" />
-这个字符串是存储在二进制文件的const部分
-用16进制编辑器打开，可以看到二进制文件中有"Cherno",这些字符被嵌入到二进制文件中了。当我们引用时，它实际指向一个不允许编辑的常量数据块。
-<img alt="" src="Pasted%20image%2020230705142330.png" />
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230705141715.png" /></p>
+<p>这个字符串是存储在二进制文件的 const 部分
+用 16 进制编辑器打开，可以看到二进制文件中有"Cherno",这些字符被嵌入到二进制文件中了。当我们引用时，它实际指向一个不允许编辑的常量数据块。
+<img alt="" src="../storage%20bag/Pasted%20image%2020230705142330.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Cherno&quot;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">name</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">;</span>
 </code></pre></div>
-在Release模式下运行修改字符串，也不会发生改变。而Debug模式下会得到一个异常。</p>
+<p>在 Release 模式下运行修改字符串，也不会发生改变。而 Debug 模式下会得到一个异常。</p>
 <h3 id="wide-char">wide char</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sa">u8</span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">const</span><span class="w"> </span><span class="kt">wchar_t</span><span class="o">*</span><span class="w"> </span><span class="n">name2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sa">L</span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span><span class="w">  </span><span class="c1">// L表明后面的字符串字面量是由宽字符组成的</span>
@@ -670,12 +1088,12 @@
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">const</span><span class="w"> </span><span class="kt">char16_t</span><span class="o">*</span><span class="w"> </span><span class="n">name3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sa">u</span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span><span class="w">   </span><span class="c1">// 16 bits = 2 bytes</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">const</span><span class="w"> </span><span class="kt">char32_t</span><span class="o">*</span><span class="w"> </span><span class="n">name4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sa">U</span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span><span class="w">   </span><span class="c1">// 32 bits = 4 bytes</span>
 </code></pre></div>
-<h4 id="wchar_tchar16_t">wchar_t和char16_t的区别？</h4>
-<p>虽然我们一直说wchar每个字符都是2字节，但实际上是由编译器决定的。（Windows：2 bytes，Linux：4 bytes）。
-如果你希望它一直是2 bytes，你可以用<code>char16_t</code></p>
-<h3 id="r">R方法</h3>
+<h4 id="wchar_t-char16_t">wchar_t 和 char16_t 的区别？</h4>
+<p>虽然我们一直说 wchar 每个字符都是 2 字节，但实际上是由编译器决定的。（Windows：2 bytes，Linux：4 bytes）。
+如果你希望它一直是 2 bytes，你可以用<code>char16_t</code></p>
+<h3 id="r">R 方法</h3>
 <p>字符串前面加上<code>R</code>代表忽略转义符，<code>R</code>代表<em>raw</em></p>
-<p><img alt="" src="Pasted%20image%2020230705144029.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230705144029.png" /></p>
 <p>字符串字面量总是存储在只读内存中。</p>
                 
               
@@ -697,6 +1115,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../32%20How%20Strings%20Work%20in%20C%2B%2B%20%28and%20how%20to%20use%20them%29/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 32 C++字符串" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              32 C++字符串
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../34%20CONST%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 34 C++中的const" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              34 C++中的const
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

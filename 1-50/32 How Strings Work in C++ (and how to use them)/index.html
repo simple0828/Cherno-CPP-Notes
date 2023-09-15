@@ -14,7 +14,7 @@
     
     
       
-        <title>32 How Strings Work in C++ (and how to use them) - cherno-cpp-notes</title>
+        <title>32 C++字符串 - cherno-cpp-notes</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              32 How Strings Work in C++ (and how to use them)
+              32 C++字符串
             
           </span>
         </div>
@@ -577,6 +577,431 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27%20Inheritance%20in%20C%2B%2B/" class="md-nav__link">
+        27 C++继承
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28%20Virtual%20Functions%20in%20C%2B%2B/" class="md-nav__link">
+        28 C++虚函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        29 C++接口（纯虚函数）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        30 C++可见性
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../31%20Arrays%20in%20C%2B%2B/" class="md-nav__link">
+        31 C++数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          32 C++字符串
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        32 C++字符串
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-const-char" class="md-nav__link">
+    1. const* char
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-stdstring" class="md-nav__link">
+    2. std::string
+  </a>
+  
+    <nav class="md-nav" aria-label="2. std::string">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    字符串拼接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 字符串传给其他函数
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../33%20String%20Literals%20in%20C%2B%2B/" class="md-nav__link">
+        33 C++字符串字面量
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../34%20CONST%20in%20C%2B%2B/" class="md-nav__link">
+        34 C++中的const
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../35%20The%20Mutable%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        35 C++的mutable关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../36%20%20Member%20Initializer%20Lists%20in%20C%2B%2B%20%28Constructor%20Initializer%20List%29/" class="md-nav__link">
+        36 C++的成员初始化列表
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../37%20Ternary%20Operators%20in%20C%2B%2B%20%28Conditional%20Assignment%29/" class="md-nav__link">
+        37 C++的三元操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../38%20How%20to%20CREATE_INSTANTIATE%20OBJECTS%20in%20C%2B%2B/" class="md-nav__link">
+        38 创建并初始化C++对象
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../39%20The%20NEW%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        39 C++ new关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../40%20Implicit%20Conversion%20and%20the%20Explicit%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        40 C++隐式转换与explicit关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../41%20OPERATORS%20and%20OPERATOR%20OVERLOADING%20in%20C%2B%2B/" class="md-nav__link">
+        41 C++运算符及其重载
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../42%20The%20%60this%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        42 C++的this关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
+        43 C++的对象生存期（栈作用域生存期）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../44%20SMART%20POINTERS%20in%20C%2B%2B/" class="md-nav__link">
+        44 C++的智能指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../45%20Copying%20and%20Copy%20Constructors%20in%20C%2B%2B/" class="md-nav__link">
+        45 C++的复制与拷贝构造函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../46%20The%20Arrow%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        46 C++的箭头操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
+        47 C++的动态数组（std::vector)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../48%20Optimizing%20the%20usage%20of%20std%20-%20-vector%20in%20C%2B%2B/" class="md-nav__link">
+        48 C++的std::vector使用优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../49%20Using%20Libraries%20in%20C%2B%2B%20%28Static%20Linking%29/" class="md-nav__link">
+        49 C++中使用库（静态链接）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../50%20Using%20Dynamic%20Libraries%20in%20C%2B%2B/" class="md-nav__link">
+        50 C++中使用动态库
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -653,55 +1078,55 @@
                   </a>
                 
                 
-                  <h1>32 How Strings Work in C++ (and how to use them)</h1>
+                  <h1>32 C++字符串</h1>
                 
                 <p>需要<em>pointer</em>和<em>array</em>的前置知识，因为你会发现字符串和数组关系是很紧密的。
 首先，字符串是什么？本质上来说字符串就是一组<em>characters</em>字符，字符是指字母，数字和符号这些东西，本质上就是文本，对我们来说当然会需要用某种方式把文本的形状和格式在电脑上表示出来。</p>
 <p>单一字符、整个段落、一个单词、一堆单词......所有这些被称为字符串，<em>string of text</em>(文本字符串)</p>
-<p>C++中有一种数字类型叫<em>char</em>，它是<em>character</em>的缩写，占用1个字节内存。它很有用，因为能把指针转换为char类型指针，让你根据字节进行指针运算。它对分配内存缓冲区也很有用，如果你想分配1k的内存，你分配1024个char就行了。
-它对字符串和文本也很有用，因为C++默认处理的字符方式就是<em>ASCII</em>(aski)字符.
-字符也可以是大于一个字节的(比如中文、日文)，可以有2-4个字节的字符。</p>
-<p>如果我们只用1字节来表示字符，1字节=8bit，这意味着我们有<span class="arithmatex">\(2^8=256\)</span> 种可能，显然数量不够，没法适配所有语言。
-所以我们有了<em>utf-16</em>，也就是16位的字符编码，这意味着我们有<span class="arithmatex">\(2^{16}=65536\)</span> 种可能.</p>
-<p>但是在C++基础语言中不适用任何库只是原始数据类型的话，<em>char</em>就是1字节。</p>
+<p>C++中有一种数字类型叫<em>char</em>，它是<em>character</em>的缩写，占用 1 个字节内存。它很有用，因为能把指针转换为 char 类型指针，让你根据字节进行指针运算。它对分配内存缓冲区也很有用，如果你想分配 1k 的内存，你分配 1024 个 char 就行了。
+它对字符串和文本也很有用，因为 C++默认处理的字符方式就是<em>ASCII</em>(aski)字符.
+字符也可以是大于一个字节的(比如中文、日文)，可以有 2-4 个字节的字符。</p>
+<p>如果我们只用 1 字节来表示字符，1 字节=8bit，这意味着我们有<span class="arithmatex">\(2^8=256\)</span> 种可能，显然数量不够，没法适配所有语言。
+所以我们有了<em>utf-16</em>，也就是 16 位的字符编码，这意味着我们有<span class="arithmatex">\(2^{16}=65536\)</span> 种可能.</p>
+<p>但是在 C++基础语言中不适用任何库只是原始数据类型的话，<em>char</em>就是 1 字节。</p>
 <h2 id="1-const-char">1. const* char</h2>
-<p>经验法则：如果你不用<em>new</em>关键字，那就不要用<em>delete</em>
+<p>经验法则：如果你不用<em>new</em>关键字，那就不要用<em>delete</em></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span><span class="w">  </span><span class="c1">// C语言风格定义字符串的方式</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">name</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">;</span><span class="w">  </span><span class="c1">// 无法实现，如果你知道不会去修改字符串就加上const，否则就去掉</span>
-</code></pre></div></p>
-<p>C++11开始，将字符串常量直接赋值给非<code>const</code>的<code>char*</code>指针被视为不安全的行为。
-故用
+</code></pre></div>
+<p>C++11 开始，将字符串常量直接赋值给非<code>const</code>的<code>char*</code>指针被视为不安全的行为。
+故用</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">name</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span>
 </code></pre></div>
-<img alt="" src="Pasted%20image%2020230705122342.png" />
-图中给的<code>00</code>字符被称为<em>the null termination character</em>(空终止符)，这样我们就知道字符串在哪里结束，也便于知道字符串大小 ^26e746</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">name2</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="sc">&#39;C&#39;</span><span class="p">,</span><span class="sc">&#39;h&#39;</span><span class="p">,</span><span class="sc">&#39;e&#39;</span><span class="p">,</span><span class="sc">&#39;r&#39;</span><span class="p">,</span><span class="sc">&#39;n&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="w"> </span><span class="p">};</span>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230705122342.png" /></p>
+<p>图中给的<code>00</code>字符被称为<em>the null termination character</em>(空终止符)，这样我们就知道字符串在哪里结束，也便于知道字符串大小 ^26e746</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">name2</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="sc">&#39;C&#39;</span><span class="p">,</span><span class="sc">&#39;h&#39;</span><span class="p">,</span><span class="sc">&#39;e&#39;</span><span class="p">,</span><span class="sc">&#39;r&#39;</span><span class="p">,</span><span class="sc">&#39;n&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="w"> </span><span class="p">};</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name2</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w">   </span><span class="c1">// Cherno烫烫烫烫烫......</span>
 </code></pre></div>
-<img alt="" src="Pasted%20image%2020230705123511.png" />
-分配了<em>array guard</em>，但是没有空终止符，所以cout不知道打印到哪里结束
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230705123511.png" /></p>
+<p>分配了<em>array guard</em>，但是没有空终止符，所以 cout 不知道打印到哪里结束</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">name2</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="sc">&#39;C&#39;</span><span class="p">,</span><span class="sc">&#39;h&#39;</span><span class="p">,</span><span class="sc">&#39;e&#39;</span><span class="p">,</span><span class="sc">&#39;r&#39;</span><span class="p">,</span><span class="sc">&#39;n&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="p">,</span><span class="sc">&#39;\0&#39;</span><span class="p">};</span><span class="w"> </span><span class="c1">// 直接写成0也行</span>
 </code></pre></div>
-<img alt="" src="Pasted%20image%2020230705123808.png" />
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230705123808.png" />
 正常输出</p>
 <h2 id="2-stdstring">2. std::string</h2>
-<p>std::string有个接受参数为char指针或者const char指针的构造函数
-<img alt="" src="Pasted%20image%2020230705124249.png" />
-还有很多内置方法
+<p>std::string 有个接受参数为 char 指针或者 const char 指针的构造函数
+<img alt="" src="../storage%20bag/Pasted%20image%2020230705124249.png" />
+还有很多内置方法</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w">          </span><span class="c1">// Cherno</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w">   </span><span class="c1">// 6</span>
-</code></pre></div></p>
-<h3 id="_1">字符串拼接</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Cherno&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p">;</span><span class="w">  </span><span class="c1">//&#39;+&#39;: cannot add two pointers</span>
 </code></pre></div>
-上面提到了它们是const char数组，不是真正的string</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span>
+<h3 id="_1">字符串拼接</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Cherno&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p">;</span><span class="w">  </span><span class="c1">//&#39;+&#39;: cannot add two pointers</span>
+</code></pre></div>
+<p>上面提到了它们是 const char 数组，不是真正的 string</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">name</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p">;</span><span class="w">   </span><span class="c1">// Chernohello</span>
 </code></pre></div>
-或者
+<p>或者</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">&quot;Cherno&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;hello!&quot;</span><span class="p">;</span>
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="3">3. 字符串传给其他函数</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">PrintString</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">string</span><span class="p">)</span><span class="w"> </span><span class="c1">//引用，而不会拷贝,并保证不修改</span>
 </code></pre></div>
@@ -725,6 +1150,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../31%20Arrays%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 31 C++数组" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              31 C++数组
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../33%20String%20Literals%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 33 C++字符串字面量" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              33 C++字符串字面量
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

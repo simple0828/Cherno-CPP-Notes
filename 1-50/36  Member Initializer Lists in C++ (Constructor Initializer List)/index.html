@@ -14,7 +14,7 @@
     
     
       
-        <title>36 Member Initializer Lists in C++ (Constructor Initializer List) - cherno-cpp-notes</title>
+        <title>36 C++的成员初始化列表 - cherno-cpp-notes</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              36  Member Initializer Lists in C++ (Constructor Initializer List)
+              36 C++的成员初始化列表
             
           </span>
         </div>
@@ -577,6 +577,437 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27%20Inheritance%20in%20C%2B%2B/" class="md-nav__link">
+        27 C++继承
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28%20Virtual%20Functions%20in%20C%2B%2B/" class="md-nav__link">
+        28 C++虚函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        29 C++接口（纯虚函数）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
+        30 C++可见性
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../31%20Arrays%20in%20C%2B%2B/" class="md-nav__link">
+        31 C++数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../32%20How%20Strings%20Work%20in%20C%2B%2B%20%28and%20how%20to%20use%20them%29/" class="md-nav__link">
+        32 C++字符串
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../33%20String%20Literals%20in%20C%2B%2B/" class="md-nav__link">
+        33 C++字符串字面量
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../34%20CONST%20in%20C%2B%2B/" class="md-nav__link">
+        34 C++中的const
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../35%20The%20Mutable%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        35 C++的mutable关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          36 C++的成员初始化列表
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        36 C++的成员初始化列表
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 构造函数初始化
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 构造函数初始化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    1. 一般方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 构造函数初始化列表
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 构造函数初始化列表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    为什么要用这个？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../37%20Ternary%20Operators%20in%20C%2B%2B%20%28Conditional%20Assignment%29/" class="md-nav__link">
+        37 C++的三元操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../38%20How%20to%20CREATE_INSTANTIATE%20OBJECTS%20in%20C%2B%2B/" class="md-nav__link">
+        38 创建并初始化C++对象
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../39%20The%20NEW%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        39 C++ new关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../40%20Implicit%20Conversion%20and%20the%20Explicit%20Keyword%20in%20C%2B%2B/" class="md-nav__link">
+        40 C++隐式转换与explicit关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../41%20OPERATORS%20and%20OPERATOR%20OVERLOADING%20in%20C%2B%2B/" class="md-nav__link">
+        41 C++运算符及其重载
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../42%20The%20%60this%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        42 C++的this关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
+        43 C++的对象生存期（栈作用域生存期）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../44%20SMART%20POINTERS%20in%20C%2B%2B/" class="md-nav__link">
+        44 C++的智能指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../45%20Copying%20and%20Copy%20Constructors%20in%20C%2B%2B/" class="md-nav__link">
+        45 C++的复制与拷贝构造函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../46%20The%20Arrow%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        46 C++的箭头操作符
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
+        47 C++的动态数组（std::vector)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../48%20Optimizing%20the%20usage%20of%20std%20-%20-vector%20in%20C%2B%2B/" class="md-nav__link">
+        48 C++的std::vector使用优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../49%20Using%20Libraries%20in%20C%2B%2B%20%28Static%20Linking%29/" class="md-nav__link">
+        49 C++中使用库（静态链接）
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../50%20Using%20Dynamic%20Libraries%20in%20C%2B%2B/" class="md-nav__link">
+        50 C++中使用动态库
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -659,21 +1090,21 @@
                   </a>
                 
                 
-                  <h1>36  Member Initializer Lists in C++ (Constructor Initializer List)</h1>
+                  <h1>36 C++的成员初始化列表</h1>
                 
                 <p>构造函数初始化列表，是我们在构造函数中初始化类成员的一种方式。当我们编写类并向这个类添加成员的时候，通常需要用某种方式对这些成员进行初始化，这一般发生在构造函数中，我们有两种方法可以再构造函数中初始化类成员。</p>
 <h2 id="1">1. 构造函数初始化</h2>
 <h3 id="1_1">1. 一般方法</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#define LOG(x) std::cout &lt;&lt; x &lt;&lt; std::endl; </span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#define LOG(x) std::cout &lt;&lt; x &lt;&lt; std::endl;</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">class</span><span class="w"> </span><span class="nc">Entity</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">{</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">private</span><span class="o">:</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">m_Name</span><span class="p">;</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">public</span><span class="o">:</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">Entity</span><span class="p">()</span><span class="w">    </span><span class="c1">//Entity entity1; 调用默认构造函数，默认使用 &quot;Unknown&quot; 作为名称 </span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">Entity</span><span class="p">()</span><span class="w">    </span><span class="c1">//Entity entity1; 调用默认构造函数，默认使用 &quot;Unknown&quot; 作为名称</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">{</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="n">m_Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Unknown&quot;</span><span class="p">;</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="p">}</span>
@@ -690,7 +1121,7 @@
 <a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="p">{</span>
 <a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="n">Entity</span><span class="w"> </span><span class="n">e</span><span class="p">;</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="n">LOG</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">GetName</span><span class="p">())</span><span class="w">           </span><span class="c1">// &quot;Unknown&quot;</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="n">Entity</span><span class="w"> </span><span class="n">e1</span><span class="p">(</span><span class="s">&quot;Cherno&quot;</span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="n">Entity</span><span class="w"> </span><span class="n">e1</span><span class="p">(</span><span class="s">&quot;Cherno&quot;</span><span class="p">);</span>
 <a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">    </span><span class="n">LOG</span><span class="p">(</span><span class="n">e1</span><span class="p">.</span><span class="n">GetName</span><span class="p">())</span><span class="w">          </span><span class="c1">// &quot;Cherno&quot;</span>
 <a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
 <a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="p">}</span>
@@ -728,8 +1159,8 @@
 </code></pre></div>
 <p>不管你怎么写初始化列表，它都会按照类成员的定义顺序进行初始化。如果打破这个顺序，就会导致各种依赖问题。所以要确保写成员初始化列表时，保持和成员变量的声明顺序一样。</p>
 <h4 id="_1">为什么要用这个？</h4>
-<p>代码风格原因，就是如果变量多起来的话，写在list里会让我们的构造函数代码非常干净而且容易阅读。</p>
-<p>功能上的区别，这个区别特定的作用在类上。
+<p>代码风格原因，就是如果变量多起来的话，写在 list 里会让我们的构造函数代码非常干净而且容易阅读。</p>
+<p>功能上的区别，这个区别特定的作用在类上。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Entity</span><span class="p">()</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="o">:</span><span class="w">  </span><span class="n">x</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="n">y</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="n">z</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">{</span>
@@ -737,7 +1168,7 @@
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="c1">//相当于 std::string(&quot;Unknown&quot;);</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">}</span>
 </code></pre></div>
-你创建了两个字符串，其中一个直接被抛弃了，这是性能浪费</p>
+<p>你创建了两个字符串，其中一个直接被抛弃了，这是性能浪费</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Example</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">public</span><span class="o">:</span>
@@ -780,16 +1211,16 @@
 <a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
 <a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="p">}</span>
 </code></pre></div>
-<p>这里创建了两个Entity，一个是在<code>private:Example m_Example；</code>创建的，另一个是<code>m_Example = Example(8);</code>，在这里创建了一个新的Example对象，然后赋值给了m_Example(old one)，覆盖造成性能浪费。</p>
-<p>但是如果改成移动到初始化列表中：
+<p>这里创建了两个 Entity，一个是在<code>private:Example m_Example；</code>创建的，另一个是<code>m_Example = Example(8);</code>，在这里创建了一个新的 Example 对象，然后赋值给了 m_Example(old one)，覆盖造成性能浪费。</p>
+<p>但是如果改成移动到初始化列表中：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">Entity</span><span class="p">()</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">m_Example</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="w">   </span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">m_Example</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="c1">// : m_Example(Example(8))</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">{</span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="n">m_Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">&quot;Unknown&quot;</span><span class="p">);</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
 </code></pre></div>
-这样就只会创建一个对象。所以你应该到处使用成员初始化列表，绝对没有不适用它们的理由</p>
+<p>这样就只会创建一个对象。所以你应该到处使用成员初始化列表，绝对没有不适用它们的理由</p>
                 
               
               
@@ -810,6 +1241,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../35%20The%20Mutable%20Keyword%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 35 C++的mutable关键字" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              35 C++的mutable关键字
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../37%20Ternary%20Operators%20in%20C%2B%2B%20%28Conditional%20Assignment%29/" class="md-footer__link md-footer__link--next" aria-label="下一页: 37 C++的三元操作符" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              37 C++的三元操作符
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
