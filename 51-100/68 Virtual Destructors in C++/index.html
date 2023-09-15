@@ -14,7 +14,7 @@
     
     
       
-        <title>68 Virtual Destructors in C++ - cherno-cpp-notes</title>
+        <title>68 C++的虚析构函数 - cherno-cpp-notes</title>
       
     
     
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              68 Virtual Destructors in C++
+              68 C++的虚析构函数
             
           </span>
         </div>
@@ -356,7 +356,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/12%20CONDITIONS%20and%20BRANCHES%20in%20C%2B%2B/" class="md-nav__link">
-        12 C++条件与分支（if语句）
+        12 C++条件与分支(if语句)
       </a>
     </li>
   
@@ -386,7 +386,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/14%20Loops%20in%20C%2B%2B%28for%2Cwhile%20loops%29/" class="md-nav__link">
-        14 C++循环（for 、while）
+        14 C++循环(for&while)
       </a>
     </li>
   
@@ -521,7 +521,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/23%20Local%20Static%20in%20C%2B%2B/" class="md-nav__link">
-        23 C++中的局部静态（Local Static）
+        23 C++中的局部静态(Local Static)
       </a>
     </li>
   
@@ -611,7 +611,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
-        29 C++接口（纯虚函数）
+        29 C++接口(纯虚函数)
       </a>
     </li>
   
@@ -821,7 +821,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
-        43 C++的对象生存期（栈作用域生存期）
+        43 C++的对象生存期(栈作用域生存期)
       </a>
     </li>
   
@@ -881,7 +881,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
-        47 C++的动态数组（std::vector)
+        47 C++的动态数组(std::vector)
       </a>
     </li>
   
@@ -932,6 +932,614 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../51%20Making%20and%20Working%20with%20Libraries%20in%20C%2B%2B%20%28Multiple%20Projects%20in%20VS%29/" class="md-nav__link">
+        51 C++中创建与使用库
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../52%20How%20to%20Deal%20with%20Multiple%20Return%20Values%20in%20C%2B%2B/" class="md-nav__link">
+        52 C++中如何处理多返回值
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../53%20Templates%20in%20C%2B%2B/" class="md-nav__link">
+        53 C++的模板
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../54%20Stack%20vs%20Heap%20Memory%20in%20C%2B%2B/" class="md-nav__link">
+        54 C++的堆与栈内存的比较
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../55%20Macros%20in%20C%2B%2B/" class="md-nav__link">
+        55 C++的宏
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../56%20The%20%60auto%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        56 C++的auto关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../57%20Static%20Arrays%20in%20C%2B%2B%20%28std%20-%20-array%29/" class="md-nav__link">
+        57 C++的静态数组(std array)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../58%20Function%20Pointers%20in%20C%2B%2B/" class="md-nav__link">
+        58 C++的函数指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../59%20Lambdas%20in%20C%2B%2B/" class="md-nav__link">
+        59 C++的lambda
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../60 为什么不使用namespace::std: '51-100/60 Why I don't `using namespace std`.md'" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../61%20Namespaces%20in%20C%2B%2B/" class="md-nav__link">
+        61 C++的名称空间
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../62%20Threads%20in%20C%2B%2B/" class="md-nav__link">
+        62 C++的线程
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../63%20Timing%20in%20C%2B%2B/" class="md-nav__link">
+        63 C++的计时
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../64%20Multidimensional%20Arrays%20in%20C%2B%2B%20%282D%20arrays%29/" class="md-nav__link">
+        64 C++多维数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../65%20Sorting%20in%20C%2B%2B/" class="md-nav__link">
+        65 C++的排序
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../66%20Type%20Punning%20in%20C%2B%2B/" class="md-nav__link">
+        66 C++的类型双关
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../67%20Unions%20in%20C%2B%2B/" class="md-nav__link">
+        67 C++的联合体
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        68 C++的虚析构函数
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../69%20Casting%20in%20C%2B%2B/" class="md-nav__link">
+        69 C++的类型转换
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../70%20Conditional%20and%20Action%20Breakpoints%20in%20C%2B%2B/" class="md-nav__link">
+        70 条件与操作断点
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../71%20Safety%20in%20modern%20C%2B%2B%20and%20how%20to%20teach%20it/" class="md-nav__link">
+        71 现代C++中的安全以及如何教授(作者个人观点)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../72%20Precompiled%20Headers%20in%20C%2B%2B/" class="md-nav__link">
+        72 C++的预编译头文件
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../73%20Dynamic%20Casting%20in%20C%2B%2B/" class="md-nav__link">
+        73 C++的dynamic_cast
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../74%20BENCHMARKING%20in%20C%2B%2B%20%28how%20to%20measure%20performance%29/" class="md-nav__link">
+        74 C++的基准测试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../75%20STRUCTURED%20BINDINGS%20in%20C%2B%2B/" class="md-nav__link">
+        75 C++的结构化绑定
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../76%20How%20to%20Deal%20with%20OPTIONAL%20Data%20in%20C%2B%2B/" class="md-nav__link">
+        76 如何处理OPTIONAL数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../77%20Multiple%20TYPES%20of%20Data%20in%20a%20SINGLE%20VARIABLE%20in%20C%2B%2B/" class="md-nav__link">
+        77 单一变量存放多类型的数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../78%20How%20to%20store%20ANY%20data%20in%20C%2B%2B/" class="md-nav__link">
+        78 如何存储任意类型的数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../79%20How%20to%20make%20C%2B%2B%20run%20FASTER%20%28with%20std-async%29/" class="md-nav__link">
+        79 如何让C++运行得更快
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../80%20How%20to%20make%20your%20STRINGS%20faster/" class="md-nav__link">
+        80 如何让C++字符串更快
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../81%20VISUAL%20BENCHMARKING%20in%20C%2B%2B/" class="md-nav__link">
+        81 C++的可视化基准测试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../82%20SINGLETONS%20in%20C%2B%2B/" class="md-nav__link">
+        82 C++的单例模式
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../83%20Small%20String%20Optimization%20in%20C%2B%2B/" class="md-nav__link">
+        83 C++的小字符串优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../84%20Track%20MEMORY%20ALLOCATIONS%20the%20Easy%20way%20in%20C%2B%2B/" class="md-nav__link">
+        84 跟踪内存分配的简单方法
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../85%20lvalues%20and%20rvalues%20in%20C%2B%2B/" class="md-nav__link">
+        85 C++的左值与右值
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../86%20Continuous%20Integration%20in%20C%2B%2B/" class="md-nav__link">
+        86 C++持续集成
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../87%20Static%20Analysis%20in%20C%2B%2B/" class="md-nav__link">
+        87 C++ 静态分析
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../88%20Argument%20Evaluation%20Order%20in%20C%2B%2B/" class="md-nav__link">
+        88 C++的参数计算顺序
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../89%20Move%20Semantics%20in%20C%2B%2B/" class="md-nav__link">
+        89 C++移动语义
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../90%20std--move%20and%20the%20Move%20Assignment%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        90 std::move与移动赋值操作符
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -949,13 +1557,13 @@
                   </a>
                 
                 
-                  <h1>68 Virtual Destructors in C++</h1>
+                  <h1>68 C++的虚析构函数</h1>
                 
                 <p>前情提要：<a href="26%20Destructors%20in%20C++.md">26 Destructors in C++</a>，<a href="27%20Inheritance%20in%20C++.md">27 Inheritance in C++</a>.<a href="28%20Virtual%20Functions%20in%20C++.md">28 Virtual Functions in C++</a></p>
 <p>虚析构函数可以想象为虚函数和析构函数的组合。
-虚析构函数对于处理多态非常重要，换句话说，如果我有一系列的子类和所有的继承：有一个类A，然后一个类B派生于A，你想把类B引用为类A，但它实际上是类B，然后你决定删除A或者它以某种方式删除了，然后你还是希望运行B的析构函数，而不是运行A的析构函数，这就是所谓的虚析构函数以及它的作用。</p>
+虚析构函数对于处理多态非常重要，换句话说，如果我有一系列的子类和所有的继承：有一个类 A，然后一个类 B 派生于 A，你想把类 B 引用为类 A，但它实际上是类 B，然后你决定删除 A 或者它以某种方式删除了，然后你还是希望运行 B 的析构函数，而不是运行 A 的析构函数，这就是所谓的虚析构函数以及它的作用。</p>
 <p>简单理解下就直接看代码吧：</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">Base</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">{</span>
@@ -983,22 +1591,22 @@
 <a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
 <a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="p">}</span>
 </code></pre></div>
-很可能已经猜到运行结果了：
-创建和删除Base类时只会调用Base类的构造和析构函数;
-对于Derived类，首先调用了基类的构造函数，然后是Derived类的构造函数，当我们删除时先调用Derived类的析构函数，再调用基类Base类的析构函数。
-<img alt="" src="Pasted%20image%2020230726214116.png" /></p>
-<p>新加入一个多态类型：
+<p>很可能已经猜到运行结果了：
+创建和删除 Base 类时只会调用 Base 类的构造和析构函数;
+对于 Derived 类，首先调用了基类的构造函数，然后是 Derived 类的构造函数，当我们删除时先调用 Derived 类的析构函数，再调用基类 Base 类的析构函数。
+<img alt="" src="../storage%20bag/Pasted%20image%2020230726214116.png" /></p>
+<p>新加入一个多态类型：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;---------------------</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Base</span><span class="o">*</span><span class="w"> </span><span class="n">poly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Derived</span><span class="p">();</span><span class="w"> </span><span class="c1">// 创建一个Derived实例，但是把它赋值给Base类</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">delete</span><span class="w"> </span><span class="n">poly</span><span class="p">;</span>
 </code></pre></div>
-<img alt="" src="Pasted%20image%2020230726214720.png" />
-这里只有基类的析构函数被调用了，而派生类的析构函数没有被调用。
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230726214720.png" /></p>
+<p>这里只有基类的析构函数被调用了，而派生类的析构函数没有被调用。
 这点很重要，因为这会造成内存泄漏。
-<code>delete</code> poly时，它不知道这个调用的析构函数可能有另一个析构函数，因为它（~Base）没有被标记为虚函数。</p>
-<p>标记为<em>virtual</em>，意味着C++知道在层次结构下可能有某种重写的方法，这个方法就可以被覆写。
+<code>delete</code> poly 时，它不知道这个调用的析构函数可能有另一个析构函数，因为它（~Base）没有被标记为虚函数。</p>
+<p>标记为<em>virtual</em>，意味着 C++知道在层次结构下可能有某种重写的方法，这个方法就可以被覆写。
 而<em>virtual destructor</em>（虚析构函数）的意思不是覆写析构函数，而是<strong>加上一个</strong>析构函数。换句话说如果我把积累的析构函数改为虚函数，它实际会先调用派生类析构函数，然后在层次结构中向上，调用基类析构函数。</p>
-<p>举一个例子来说明为什么这会造成内存泄漏：
+<p>举一个例子来说明为什么这会造成内存泄漏：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// 给派生类加一个数组成员</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">Derived</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Base</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">{</span>
@@ -1009,20 +1617,20 @@
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">m_Array</span><span class="p">;</span>
 <a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">};</span>
 </code></pre></div>
-再回想一下刚才运行程序的结果，很明显这里并没有调用派生类的析构函数，因此给数组分配的20字节内存没有被释放，造成了内存泄漏。</p>
+<p>再回想一下刚才运行程序的结果，很明显这里并没有调用派生类的析构函数，因此给数组分配的 20 字节内存没有被释放，造成了内存泄漏。</p>
 <p>那如何解决呢？
-很简单，给基类的析构函数加上<code>virtual</code>即可：
+很简单，给基类的析构函数加上<code>virtual</code>即可：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Base</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">public</span><span class="o">:</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="n">Base</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Base Constructor</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">Base</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Base Destructor</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">  </span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">Base</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Base Destructor</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">};</span>
 </code></pre></div>
-这意味着这个类有可能拓展出子类，可能还有一个析构函数也需要被调用：
-<img alt="" src="Pasted%20image%2020230726215832.png" />
-很好，现在有了和第二个例子完全一样的结果，意味着即使我们把它当做多态类型处理（或者说是当做基类类型处理），基类和派生类的析构函数都调用了，那个数组也得到了清理。</p>
-<p>所以当你在写一个要拓展的类或者子类时，只要你允许一个类拥有子类，你100%需要声明你的析构函数为虚函数，否则无法安全地拓展这个类。</p>
+<p>这意味着这个类有可能拓展出子类，可能还有一个析构函数也需要被调用：
+<img alt="" src="../storage%20bag/Pasted%20image%2020230726215832.png" /></p>
+<p>很好，现在有了和第二个例子完全一样的结果，意味着即使我们把它当做多态类型处理（或者说是当做基类类型处理），基类和派生类的析构函数都调用了，那个数组也得到了清理。</p>
+<p>所以当你在写一个要拓展的类或者子类时，只要你允许一个类拥有子类，你 100%需要声明你的析构函数为虚函数，否则无法安全地拓展这个类。</p>
                 
               
               
@@ -1043,6 +1651,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../67%20Unions%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 67 C++的联合体" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              67 C++的联合体
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../69%20Casting%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 69 C++的类型转换" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              69 C++的类型转换
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

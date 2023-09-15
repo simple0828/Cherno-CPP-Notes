@@ -14,7 +14,7 @@
     
     
       
-        <title>85 lvalues and rvalues in C++ - cherno-cpp-notes</title>
+        <title>85 C++的左值与右值 - cherno-cpp-notes</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              85 lvalues and rvalues in C++
+              85 C++的左值与右值
             
           </span>
         </div>
@@ -361,7 +361,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/12%20CONDITIONS%20and%20BRANCHES%20in%20C%2B%2B/" class="md-nav__link">
-        12 C++条件与分支（if语句）
+        12 C++条件与分支(if语句)
       </a>
     </li>
   
@@ -391,7 +391,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/14%20Loops%20in%20C%2B%2B%28for%2Cwhile%20loops%29/" class="md-nav__link">
-        14 C++循环（for 、while）
+        14 C++循环(for&while)
       </a>
     </li>
   
@@ -526,7 +526,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/23%20Local%20Static%20in%20C%2B%2B/" class="md-nav__link">
-        23 C++中的局部静态（Local Static）
+        23 C++中的局部静态(Local Static)
       </a>
     </li>
   
@@ -616,7 +616,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
-        29 C++接口（纯虚函数）
+        29 C++接口(纯虚函数)
       </a>
     </li>
   
@@ -826,7 +826,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
-        43 C++的对象生存期（栈作用域生存期）
+        43 C++的对象生存期(栈作用域生存期)
       </a>
     </li>
   
@@ -886,7 +886,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
-        47 C++的动态数组（std::vector)
+        47 C++的动态数组(std::vector)
       </a>
     </li>
   
@@ -932,6 +932,678 @@
     <li class="md-nav__item">
       <a href="../../1-50/50%20Using%20Dynamic%20Libraries%20in%20C%2B%2B/" class="md-nav__link">
         50 C++中使用动态库
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../51%20Making%20and%20Working%20with%20Libraries%20in%20C%2B%2B%20%28Multiple%20Projects%20in%20VS%29/" class="md-nav__link">
+        51 C++中创建与使用库
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../52%20How%20to%20Deal%20with%20Multiple%20Return%20Values%20in%20C%2B%2B/" class="md-nav__link">
+        52 C++中如何处理多返回值
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../53%20Templates%20in%20C%2B%2B/" class="md-nav__link">
+        53 C++的模板
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../54%20Stack%20vs%20Heap%20Memory%20in%20C%2B%2B/" class="md-nav__link">
+        54 C++的堆与栈内存的比较
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../55%20Macros%20in%20C%2B%2B/" class="md-nav__link">
+        55 C++的宏
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../56%20The%20%60auto%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        56 C++的auto关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../57%20Static%20Arrays%20in%20C%2B%2B%20%28std%20-%20-array%29/" class="md-nav__link">
+        57 C++的静态数组(std array)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../58%20Function%20Pointers%20in%20C%2B%2B/" class="md-nav__link">
+        58 C++的函数指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../59%20Lambdas%20in%20C%2B%2B/" class="md-nav__link">
+        59 C++的lambda
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../60 为什么不使用namespace::std: '51-100/60 Why I don't `using namespace std`.md'" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../61%20Namespaces%20in%20C%2B%2B/" class="md-nav__link">
+        61 C++的名称空间
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../62%20Threads%20in%20C%2B%2B/" class="md-nav__link">
+        62 C++的线程
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../63%20Timing%20in%20C%2B%2B/" class="md-nav__link">
+        63 C++的计时
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../64%20Multidimensional%20Arrays%20in%20C%2B%2B%20%282D%20arrays%29/" class="md-nav__link">
+        64 C++多维数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../65%20Sorting%20in%20C%2B%2B/" class="md-nav__link">
+        65 C++的排序
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../66%20Type%20Punning%20in%20C%2B%2B/" class="md-nav__link">
+        66 C++的类型双关
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../67%20Unions%20in%20C%2B%2B/" class="md-nav__link">
+        67 C++的联合体
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../68%20Virtual%20Destructors%20in%20C%2B%2B/" class="md-nav__link">
+        68 C++的虚析构函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../69%20Casting%20in%20C%2B%2B/" class="md-nav__link">
+        69 C++的类型转换
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../70%20Conditional%20and%20Action%20Breakpoints%20in%20C%2B%2B/" class="md-nav__link">
+        70 条件与操作断点
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../71%20Safety%20in%20modern%20C%2B%2B%20and%20how%20to%20teach%20it/" class="md-nav__link">
+        71 现代C++中的安全以及如何教授(作者个人观点)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../72%20Precompiled%20Headers%20in%20C%2B%2B/" class="md-nav__link">
+        72 C++的预编译头文件
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../73%20Dynamic%20Casting%20in%20C%2B%2B/" class="md-nav__link">
+        73 C++的dynamic_cast
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../74%20BENCHMARKING%20in%20C%2B%2B%20%28how%20to%20measure%20performance%29/" class="md-nav__link">
+        74 C++的基准测试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../75%20STRUCTURED%20BINDINGS%20in%20C%2B%2B/" class="md-nav__link">
+        75 C++的结构化绑定
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../76%20How%20to%20Deal%20with%20OPTIONAL%20Data%20in%20C%2B%2B/" class="md-nav__link">
+        76 如何处理OPTIONAL数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../77%20Multiple%20TYPES%20of%20Data%20in%20a%20SINGLE%20VARIABLE%20in%20C%2B%2B/" class="md-nav__link">
+        77 单一变量存放多类型的数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../78%20How%20to%20store%20ANY%20data%20in%20C%2B%2B/" class="md-nav__link">
+        78 如何存储任意类型的数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../79%20How%20to%20make%20C%2B%2B%20run%20FASTER%20%28with%20std-async%29/" class="md-nav__link">
+        79 如何让C++运行得更快
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../80%20How%20to%20make%20your%20STRINGS%20faster/" class="md-nav__link">
+        80 如何让C++字符串更快
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../81%20VISUAL%20BENCHMARKING%20in%20C%2B%2B/" class="md-nav__link">
+        81 C++的可视化基准测试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../82%20SINGLETONS%20in%20C%2B%2B/" class="md-nav__link">
+        82 C++的单例模式
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../83%20Small%20String%20Optimization%20in%20C%2B%2B/" class="md-nav__link">
+        83 C++的小字符串优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../84%20Track%20MEMORY%20ALLOCATIONS%20the%20Easy%20way%20in%20C%2B%2B/" class="md-nav__link">
+        84 跟踪内存分配的简单方法
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          85 C++的左值与右值
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        85 C++的左值与右值
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 什么是左值、右值？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 左值引用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 右值引用
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 右值引用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    小补充
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 总结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../86%20Continuous%20Integration%20in%20C%2B%2B/" class="md-nav__link">
+        86 C++持续集成
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../87%20Static%20Analysis%20in%20C%2B%2B/" class="md-nav__link">
+        87 C++ 静态分析
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../88%20Argument%20Evaluation%20Order%20in%20C%2B%2B/" class="md-nav__link">
+        88 C++的参数计算顺序
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../89%20Move%20Semantics%20in%20C%2B%2B/" class="md-nav__link">
+        89 C++移动语义
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../90%20std--move%20and%20the%20Move%20Assignment%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        90 std::move与移动赋值操作符
       </a>
     </li>
   
@@ -1020,7 +1692,7 @@
                   </a>
                 
                 
-                  <h1>85 lvalues and rvalues in C++</h1>
+                  <h1>85 C++的左值与右值</h1>
                 
                 <p>本节开始将进入一些更高级的C++特性，包括move语义，但要理解它还需要很多前置知识，比如左值、右值。可以先不要着急给左值、右值下定义，慢慢理解即可。</p>
 <h2 id="1">1. 什么是左值、右值？</h2>
@@ -1033,7 +1705,7 @@
 但这不是一个完整的事实，不能总是这样理解，不过在这个例子中是对的。</p>
 </blockquote>
 <p>我们有一个变量 <mark>i</mark> ， 这是一个在内存中有位置的实际变量，然后我们有一个值、一个数字字面量 <mark><em>10</em></mark> ， 它没有存储空间，没有位置，直到我们把它赋值给了左值 <mark>i</mark> 。 但是我们不能给一个右值赋值，比如我们不能说 10 = i ， 这会很奇怪。</p>
-<p><img alt="" src="Pasted%20image%2020230807164943.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230807164943.png" /></p>
 <p>因为 10 没有位置，我们不能在 10 中存储数据。 而 <mark>i</mark> 是一个左值，显然我们可以用另一个变量 <mark>a</mark> 让它等于 <mark>i</mark>。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
@@ -1057,7 +1729,7 @@
 <p>我们调用这个函数，它返回一个临时值，因为这个返回的int没有位置，没有存储空间，只是一个值 10，所以也是右值。我们取这个右值、临时值，然后把它存储到左值 i 中。</p>
 </blockquote>
 <p>因为GetValue()是一个右值，所以给它赋值是行不通的：</p>
-<p><img alt="" src="Pasted%20image%2020230807165555.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230807165555.png" /></p>
 <h2 id="2">2. 左值引用</h2>
 <p>但如果函数返回的是一个左值，事情就变得有趣起来了，我们可以通过返回<code>int&amp;</code>（<strong>左值引用</strong>）来实现：
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// 我们需要给我们的值提供某种存储空间，比如使用一个静态int，然后返回它</span>
@@ -1091,7 +1763,7 @@
 <p>这种情况下，当函数被调用时，这个右值会用来创建一个左值。</p>
 </blockquote>
 <p>我们可以很容易得看出来哪个是临时的，哪个不是，因为有一个规则是：你不能将右值赋给左值引用，所以左值引用的只能是左值。在函数参数中加上一个<code>&amp;</code>，取一个左值引用，这里就马上得到了一个错误：</p>
-<p><img alt="" src="Pasted%20image%2020230807170933.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230807170933.png" /></p>
 <blockquote>
 <p>非const引用的初始值必须是左值。</p>
 </blockquote>
@@ -1109,7 +1781,7 @@
 <p>所以实际上，它不可避免地创建了一个左值，但同时支持了左值和右值。</p>
 </blockquote>
 <p>因为如果把函数参数这里改成<code>const int&amp;</code>，就可以看到它现在同时可以接受两种类型数据了：</p>
-<p><img alt="" src="Pasted%20image%2020230807171749.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230807171749.png" /></p>
 <p>看另一个例子，请找出你认为的左值和右值都是什么：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">{</span>
@@ -1131,17 +1803,17 @@
 <a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">}</span>
 </code></pre></div>
-<p><img alt="" src="Pasted%20image%2020230807172416.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230807172416.png" /></p>
 <blockquote>
 <p>无法用临时变量作为参数</p>
 </blockquote>
 <p>这就是为什么你会在C++中看到很多常量引用（如<code>const int&amp;</code>），因为它们能兼容临时的右值和实际存在的左值变量：</p>
-<p><img alt="" src="Pasted%20image%2020230807172701.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230807172701.png" /></p>
 <p>那有没有办法写一个只接受临时对象的函数呢？</p>
 <h2 id="3">3. 右值引用</h2>
 <p>当然可以，这就是用到<strong>右值引用</strong>的时候了。</p>
 <p>右值引用和左值引用很像，只不过要用到两个<code>&amp;</code>：</p>
-<p><img alt="" src="Pasted%20image%2020230807172833.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230807172833.png" /></p>
 <blockquote>
 <p>可以发现报错位置交换了，现在不能使用左值作为参数，但是可以传递右值。</p>
 </blockquote>
@@ -1185,7 +1857,7 @@
 <a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a>
 <a id="__codelineno-10-38" name="__codelineno-10-38" href="#__codelineno-10-38"></a><span class="cm">这种设计的主要目的是允许开发者提供特定于右值的优化，如移动语义，从而提高代码的性能。*/</span>
 </code></pre></div>
-<p><img alt="" src="Pasted%20image%2020230807174334.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230807174334.png" /></p>
 <p>这里主要的优势在于优化，如果我们知道传入的是一个临时对象的话，那么我们就不需要考虑它们是否活着、是否完整、是否拷贝，我们可以简单地偷它的资源，给到特定的对象，或者在其它地方使用它们，因为我们知道它是暂时的。不会存在很长时间，只会在这个PrintName中使用。</p>
 <p>而如果用左值引用这样的函数，你就不能从name字符串中窃取任何东西，因为它可能再很多函数中使用。</p>
 <h3 id="_1">小补充</h3>
@@ -1232,6 +1904,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../84%20Track%20MEMORY%20ALLOCATIONS%20the%20Easy%20way%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 84 跟踪内存分配的简单方法" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              84 跟踪内存分配的简单方法
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../86%20Continuous%20Integration%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 86 C++持续集成" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              86 C++持续集成
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

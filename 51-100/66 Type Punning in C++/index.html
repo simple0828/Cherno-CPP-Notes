@@ -14,7 +14,7 @@
     
     
       
-        <title>66 Type Punning in C++ - cherno-cpp-notes</title>
+        <title>66 C++的类型双关 - cherno-cpp-notes</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              66 Type Punning in C++
+              66 C++的类型双关
             
           </span>
         </div>
@@ -361,7 +361,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/12%20CONDITIONS%20and%20BRANCHES%20in%20C%2B%2B/" class="md-nav__link">
-        12 C++条件与分支（if语句）
+        12 C++条件与分支(if语句)
       </a>
     </li>
   
@@ -391,7 +391,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/14%20Loops%20in%20C%2B%2B%28for%2Cwhile%20loops%29/" class="md-nav__link">
-        14 C++循环（for 、while）
+        14 C++循环(for&while)
       </a>
     </li>
   
@@ -526,7 +526,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/23%20Local%20Static%20in%20C%2B%2B/" class="md-nav__link">
-        23 C++中的局部静态（Local Static）
+        23 C++中的局部静态(Local Static)
       </a>
     </li>
   
@@ -616,7 +616,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
-        29 C++接口（纯虚函数）
+        29 C++接口(纯虚函数)
       </a>
     </li>
   
@@ -826,7 +826,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
-        43 C++的对象生存期（栈作用域生存期）
+        43 C++的对象生存期(栈作用域生存期)
       </a>
     </li>
   
@@ -886,7 +886,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
-        47 C++的动态数组（std::vector)
+        47 C++的动态数组(std::vector)
       </a>
     </li>
   
@@ -932,6 +932,651 @@
     <li class="md-nav__item">
       <a href="../../1-50/50%20Using%20Dynamic%20Libraries%20in%20C%2B%2B/" class="md-nav__link">
         50 C++中使用动态库
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../51%20Making%20and%20Working%20with%20Libraries%20in%20C%2B%2B%20%28Multiple%20Projects%20in%20VS%29/" class="md-nav__link">
+        51 C++中创建与使用库
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../52%20How%20to%20Deal%20with%20Multiple%20Return%20Values%20in%20C%2B%2B/" class="md-nav__link">
+        52 C++中如何处理多返回值
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../53%20Templates%20in%20C%2B%2B/" class="md-nav__link">
+        53 C++的模板
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../54%20Stack%20vs%20Heap%20Memory%20in%20C%2B%2B/" class="md-nav__link">
+        54 C++的堆与栈内存的比较
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../55%20Macros%20in%20C%2B%2B/" class="md-nav__link">
+        55 C++的宏
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../56%20The%20%60auto%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        56 C++的auto关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../57%20Static%20Arrays%20in%20C%2B%2B%20%28std%20-%20-array%29/" class="md-nav__link">
+        57 C++的静态数组(std array)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../58%20Function%20Pointers%20in%20C%2B%2B/" class="md-nav__link">
+        58 C++的函数指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../59%20Lambdas%20in%20C%2B%2B/" class="md-nav__link">
+        59 C++的lambda
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../60 为什么不使用namespace::std: '51-100/60 Why I don't `using namespace std`.md'" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../61%20Namespaces%20in%20C%2B%2B/" class="md-nav__link">
+        61 C++的名称空间
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../62%20Threads%20in%20C%2B%2B/" class="md-nav__link">
+        62 C++的线程
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../63%20Timing%20in%20C%2B%2B/" class="md-nav__link">
+        63 C++的计时
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../64%20Multidimensional%20Arrays%20in%20C%2B%2B%20%282D%20arrays%29/" class="md-nav__link">
+        64 C++多维数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../65%20Sorting%20in%20C%2B%2B/" class="md-nav__link">
+        65 C++的排序
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          66 C++的类型双关
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        66 C++的类型双关
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 类型系统
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    1. 结构体类型转换
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../67%20Unions%20in%20C%2B%2B/" class="md-nav__link">
+        67 C++的联合体
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../68%20Virtual%20Destructors%20in%20C%2B%2B/" class="md-nav__link">
+        68 C++的虚析构函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../69%20Casting%20in%20C%2B%2B/" class="md-nav__link">
+        69 C++的类型转换
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../70%20Conditional%20and%20Action%20Breakpoints%20in%20C%2B%2B/" class="md-nav__link">
+        70 条件与操作断点
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../71%20Safety%20in%20modern%20C%2B%2B%20and%20how%20to%20teach%20it/" class="md-nav__link">
+        71 现代C++中的安全以及如何教授(作者个人观点)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../72%20Precompiled%20Headers%20in%20C%2B%2B/" class="md-nav__link">
+        72 C++的预编译头文件
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../73%20Dynamic%20Casting%20in%20C%2B%2B/" class="md-nav__link">
+        73 C++的dynamic_cast
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../74%20BENCHMARKING%20in%20C%2B%2B%20%28how%20to%20measure%20performance%29/" class="md-nav__link">
+        74 C++的基准测试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../75%20STRUCTURED%20BINDINGS%20in%20C%2B%2B/" class="md-nav__link">
+        75 C++的结构化绑定
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../76%20How%20to%20Deal%20with%20OPTIONAL%20Data%20in%20C%2B%2B/" class="md-nav__link">
+        76 如何处理OPTIONAL数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../77%20Multiple%20TYPES%20of%20Data%20in%20a%20SINGLE%20VARIABLE%20in%20C%2B%2B/" class="md-nav__link">
+        77 单一变量存放多类型的数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../78%20How%20to%20store%20ANY%20data%20in%20C%2B%2B/" class="md-nav__link">
+        78 如何存储任意类型的数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../79%20How%20to%20make%20C%2B%2B%20run%20FASTER%20%28with%20std-async%29/" class="md-nav__link">
+        79 如何让C++运行得更快
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../80%20How%20to%20make%20your%20STRINGS%20faster/" class="md-nav__link">
+        80 如何让C++字符串更快
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../81%20VISUAL%20BENCHMARKING%20in%20C%2B%2B/" class="md-nav__link">
+        81 C++的可视化基准测试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../82%20SINGLETONS%20in%20C%2B%2B/" class="md-nav__link">
+        82 C++的单例模式
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../83%20Small%20String%20Optimization%20in%20C%2B%2B/" class="md-nav__link">
+        83 C++的小字符串优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../84%20Track%20MEMORY%20ALLOCATIONS%20the%20Easy%20way%20in%20C%2B%2B/" class="md-nav__link">
+        84 跟踪内存分配的简单方法
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../85%20lvalues%20and%20rvalues%20in%20C%2B%2B/" class="md-nav__link">
+        85 C++的左值与右值
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../86%20Continuous%20Integration%20in%20C%2B%2B/" class="md-nav__link">
+        86 C++持续集成
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../87%20Static%20Analysis%20in%20C%2B%2B/" class="md-nav__link">
+        87 C++ 静态分析
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../88%20Argument%20Evaluation%20Order%20in%20C%2B%2B/" class="md-nav__link">
+        88 C++的参数计算顺序
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../89%20Move%20Semantics%20in%20C%2B%2B/" class="md-nav__link">
+        89 C++移动语义
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../90%20std--move%20and%20the%20Move%20Assignment%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        90 std::move与移动赋值操作符
       </a>
     </li>
   
@@ -993,11 +1638,11 @@
                   </a>
                 
                 
-                  <h1>66 Type Punning in C++</h1>
+                  <h1>66 C++的类型双关</h1>
                 
                 <h2 id="1">1. 类型系统</h2>
-<p><em>Type punning</em>（类型双关）只是一个花哨的术语，用来在C++中绕过类型系统。C++是强类型语言，也就是说它有一个类型系统，不像JavaScript那样创建变量不需要声明变量类型，但C++中你创建变量时必须声明整数、双精度数、结构体等等类型。然而这种类型系统并不像Java中那么“强制”，C++中虽然类型是由编译器强制执行的，但你可以直接访问内存，所以可以很容易地绕过类型系统，你是否要这么做取决于你的实际需求。在某些情况下，你绝对不应该规避类型系统，因为类型系统存在是有原因的，除非你有充分的理由，否则你不会想过多地使用它。 ^4d9dfe</p>
-<p>假设我有一个简单的类，现在想把它写成一个字节流，就可以重新解释它的整个结构，将它作为一个字节数组然后用字节流输出出来。很多情况下这这是非常有用的，这是一种原始的、底层的访问，这就是为什么C++效率高，应用程序性能好的原因了。</p>
+<p><em>Type punning</em>（类型双关）只是一个花哨的术语，用来在 C++中绕过类型系统。C++是强类型语言，也就是说它有一个类型系统，不像 JavaScript 那样创建变量不需要声明变量类型，但 C++中你创建变量时必须声明整数、双精度数、结构体等等类型。然而这种类型系统并不像 Java 中那么“强制”，C++中虽然类型是由编译器强制执行的，但你可以直接访问内存，所以可以很容易地绕过类型系统，你是否要这么做取决于你的实际需求。在某些情况下，你绝对不应该规避类型系统，因为类型系统存在是有原因的，除非你有充分的理由，否则你不会想过多地使用它。 ^4d9dfe</p>
+<p>假设我有一个简单的类，现在想把它写成一个字节流，就可以重新解释它的整个结构，将它作为一个字节数组然后用字节流输出出来。很多情况下这这是非常有用的，这是一种原始的、底层的访问，这就是为什么 C++效率高，应用程序性能好的原因了。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
@@ -1011,24 +1656,24 @@
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
 </code></pre></div>
-<p>内存中查看a：
-<img alt="" src="Pasted%20image%2020230725135448.png" />
-内存中查看value：
-<img alt="" src="Pasted%20image%2020230725135529.png" />
-这个例子中是一个隐式转换，显式转换只需要改为: ^f3904d
+<p>内存中查看 a：
+<img alt="" src="../storage%20bag/Pasted%20image%2020230725135448.png" /></p>
+<p>内存中查看 value：
+<img alt="" src="../storage%20bag/Pasted%20image%2020230725135529.png" /></p>
+<p>这个例子中是一个隐式转换，显式转换只需要改为: ^f3904d</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">a</span><span class="p">;</span>
-</code></pre></div></p>
-<p>那如何取a的那段内存，让这段地址被当做<code>double</code>来看待呢？
+</code></pre></div>
+<p>那如何取 a 的那段内存，让这段地址被当做<code>double</code>来看待呢？</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="kt">double</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">//原始方法：对a取地址，此时变为int指针，将类型修改为double指针后解引用</span>
-</code></pre></div></p>
-<p><img alt="" src="Pasted%20image%2020230725140104.png" />
-查看value的地址，因为double有8个字节，所以剩下的是未初始化的内存。
-<img alt="" src="Pasted%20image%2020230725140241.png" />
-导致发生的原因是我们在上面的类型转换做的很糟糕，因为它们的大小不同，我们取了一个4字节的int，然后定为double。我们在这里做的是先把一个int型指针转换为了一个double型指针，再解引用，它实际上是在我们的int后继续了4个字节然后获取了这部分内存，它并不是我们用来存放a的内存。这很糟糕，在某些情况下甚至会导致崩溃。
-这里的意思是我们已经把内存复制到了一个新的double块中操作是安全的，但是读取了不属于我们的内存是不好的。</p>
-<p>如果你不想新创建一个变量，只是想把这个int当做double来访问，只需要再double后加一个<code>&amp;</code>，引用而不拷贝，这样你就可以编辑int的内存，这是很危险的，因为double需要8个字节而我们的空间只有4个字节，这可能会导致程序崩溃。</p>
+</code></pre></div>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230725140104.png" /></p>
+<p>查看 value 的地址，因为 double 有 8 个字节，所以剩下的是未初始化的内存。
+<img alt="" src="../storage%20bag/Pasted%20image%2020230725140241.png" /></p>
+<p>导致发生的原因是我们在上面的类型转换做的很糟糕，因为它们的大小不同，我们取了一个 4 字节的 int，然后定为 double。我们在这里做的是先把一个 int 型指针转换为了一个 double 型指针，再解引用，它实际上是在我们的 int 后继续了 4 个字节然后获取了这部分内存，它并不是我们用来存放 a 的内存。这很糟糕，在某些情况下甚至会导致崩溃。
+这里的意思是我们已经把内存复制到了一个新的 double 块中操作是安全的，但是读取了不属于我们的内存是不好的。</p>
+<p>如果你不想新创建一个变量，只是想把这个 int 当做 double 来访问，只需要再 double 后加一个<code>&amp;</code>，引用而不拷贝，这样你就可以编辑 int 的内存，这是很危险的，因为 double 需要 8 个字节而我们的空间只有 4 个字节，这可能会导致程序崩溃。</p>
 <h2 id="1_1">1. 结构体类型转换</h2>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">Entity</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">Entity</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">};</span>
@@ -1039,17 +1684,17 @@
 <a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
 <a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
 </code></pre></div>
-在内存中，这个结构体其实就是由2个int组成的，就是这两个整数x,y。</p>
-<p><img alt="" src="Pasted%20image%2020230725142838.png" />
-结构体本身不包含任何类型的填充，任何类型的数据，如果是一个空的结构体，那么它至少是1个字节，因为我们需要对这段内存进行寻址，但如果结构体中有变量，比如这个int x和y，那它就只有这两个整数。因此我们可以将Entity结构体看成一个int数组，并且不用e.x，e.y这种方法读取这些整数。</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">e</span><span class="p">;</span>
+<p>在内存中，这个结构体其实就是由 2 个 int 组成的，就是这两个整数 x,y。</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230725142838.png" />
+结构体本身不包含任何类型的填充，任何类型的数据，如果是一个空的结构体，那么它至少是 1 个字节，因为我们需要对这段内存进行寻址，但如果结构体中有变量，比如这个 int x 和 y，那它就只有这两个整数。因此我们可以将 Entity 结构体看成一个 int 数组，并且不用 e.x，e.y 这种方法读取这些整数。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">e</span><span class="p">;</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">position</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;,&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">position</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 </code></pre></div>
-因为我们将其转换成了数组，所以可以像访问数组那样访问它。
-<img alt="" src="Pasted%20image%2020230725143621.png" /></p>
+<p>因为我们将其转换成了数组，所以可以像访问数组那样访问它。
+<img alt="" src="../storage%20bag/Pasted%20image%2020230725143621.png" /></p>
 <p>同理的更疯狂的操作：
-<img alt="" src="Pasted%20image%2020230725144039.png" />
-可以看出C++是一种强大的语言的一个重要原因就是它可以自如地操纵内存。</p>
+<img alt="" src="../storage%20bag/Pasted%20image%2020230725144039.png" />
+可以看出 C++是一种强大的语言的一个重要原因就是它可以自如地操纵内存。</p>
                 
               
               
@@ -1070,6 +1715,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../65%20Sorting%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 65 C++的排序" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              65 C++的排序
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../67%20Unions%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 67 C++的联合体" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              67 C++的联合体
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

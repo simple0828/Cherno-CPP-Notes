@@ -14,7 +14,7 @@
     
     
       
-        <title>61 Namespaces in C++ - cherno-cpp-notes</title>
+        <title>61 C++的名称空间 - cherno-cpp-notes</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              61 Namespaces in C++
+              61 C++的名称空间
             
           </span>
         </div>
@@ -361,7 +361,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/12%20CONDITIONS%20and%20BRANCHES%20in%20C%2B%2B/" class="md-nav__link">
-        12 C++条件与分支（if语句）
+        12 C++条件与分支(if语句)
       </a>
     </li>
   
@@ -391,7 +391,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/14%20Loops%20in%20C%2B%2B%28for%2Cwhile%20loops%29/" class="md-nav__link">
-        14 C++循环（for 、while）
+        14 C++循环(for&while)
       </a>
     </li>
   
@@ -526,7 +526,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/23%20Local%20Static%20in%20C%2B%2B/" class="md-nav__link">
-        23 C++中的局部静态（Local Static）
+        23 C++中的局部静态(Local Static)
       </a>
     </li>
   
@@ -616,7 +616,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
-        29 C++接口（纯虚函数）
+        29 C++接口(纯虚函数)
       </a>
     </li>
   
@@ -826,7 +826,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
-        43 C++的对象生存期（栈作用域生存期）
+        43 C++的对象生存期(栈作用域生存期)
       </a>
     </li>
   
@@ -886,7 +886,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
-        47 C++的动态数组（std::vector)
+        47 C++的动态数组(std::vector)
       </a>
     </li>
   
@@ -937,6 +937,644 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../51%20Making%20and%20Working%20with%20Libraries%20in%20C%2B%2B%20%28Multiple%20Projects%20in%20VS%29/" class="md-nav__link">
+        51 C++中创建与使用库
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../52%20How%20to%20Deal%20with%20Multiple%20Return%20Values%20in%20C%2B%2B/" class="md-nav__link">
+        52 C++中如何处理多返回值
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../53%20Templates%20in%20C%2B%2B/" class="md-nav__link">
+        53 C++的模板
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../54%20Stack%20vs%20Heap%20Memory%20in%20C%2B%2B/" class="md-nav__link">
+        54 C++的堆与栈内存的比较
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../55%20Macros%20in%20C%2B%2B/" class="md-nav__link">
+        55 C++的宏
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../56%20The%20%60auto%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        56 C++的auto关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../57%20Static%20Arrays%20in%20C%2B%2B%20%28std%20-%20-array%29/" class="md-nav__link">
+        57 C++的静态数组(std array)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../58%20Function%20Pointers%20in%20C%2B%2B/" class="md-nav__link">
+        58 C++的函数指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../59%20Lambdas%20in%20C%2B%2B/" class="md-nav__link">
+        59 C++的lambda
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../60 为什么不使用namespace::std: '51-100/60 Why I don't `using namespace std`.md'" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          61 C++的名称空间
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        61 C++的名称空间
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-namespace" class="md-nav__link">
+    1. 为什么要使用 namespace
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../62%20Threads%20in%20C%2B%2B/" class="md-nav__link">
+        62 C++的线程
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../63%20Timing%20in%20C%2B%2B/" class="md-nav__link">
+        63 C++的计时
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../64%20Multidimensional%20Arrays%20in%20C%2B%2B%20%282D%20arrays%29/" class="md-nav__link">
+        64 C++多维数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../65%20Sorting%20in%20C%2B%2B/" class="md-nav__link">
+        65 C++的排序
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../66%20Type%20Punning%20in%20C%2B%2B/" class="md-nav__link">
+        66 C++的类型双关
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../67%20Unions%20in%20C%2B%2B/" class="md-nav__link">
+        67 C++的联合体
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../68%20Virtual%20Destructors%20in%20C%2B%2B/" class="md-nav__link">
+        68 C++的虚析构函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../69%20Casting%20in%20C%2B%2B/" class="md-nav__link">
+        69 C++的类型转换
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../70%20Conditional%20and%20Action%20Breakpoints%20in%20C%2B%2B/" class="md-nav__link">
+        70 条件与操作断点
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../71%20Safety%20in%20modern%20C%2B%2B%20and%20how%20to%20teach%20it/" class="md-nav__link">
+        71 现代C++中的安全以及如何教授(作者个人观点)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../72%20Precompiled%20Headers%20in%20C%2B%2B/" class="md-nav__link">
+        72 C++的预编译头文件
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../73%20Dynamic%20Casting%20in%20C%2B%2B/" class="md-nav__link">
+        73 C++的dynamic_cast
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../74%20BENCHMARKING%20in%20C%2B%2B%20%28how%20to%20measure%20performance%29/" class="md-nav__link">
+        74 C++的基准测试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../75%20STRUCTURED%20BINDINGS%20in%20C%2B%2B/" class="md-nav__link">
+        75 C++的结构化绑定
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../76%20How%20to%20Deal%20with%20OPTIONAL%20Data%20in%20C%2B%2B/" class="md-nav__link">
+        76 如何处理OPTIONAL数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../77%20Multiple%20TYPES%20of%20Data%20in%20a%20SINGLE%20VARIABLE%20in%20C%2B%2B/" class="md-nav__link">
+        77 单一变量存放多类型的数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../78%20How%20to%20store%20ANY%20data%20in%20C%2B%2B/" class="md-nav__link">
+        78 如何存储任意类型的数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../79%20How%20to%20make%20C%2B%2B%20run%20FASTER%20%28with%20std-async%29/" class="md-nav__link">
+        79 如何让C++运行得更快
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../80%20How%20to%20make%20your%20STRINGS%20faster/" class="md-nav__link">
+        80 如何让C++字符串更快
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../81%20VISUAL%20BENCHMARKING%20in%20C%2B%2B/" class="md-nav__link">
+        81 C++的可视化基准测试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../82%20SINGLETONS%20in%20C%2B%2B/" class="md-nav__link">
+        82 C++的单例模式
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../83%20Small%20String%20Optimization%20in%20C%2B%2B/" class="md-nav__link">
+        83 C++的小字符串优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../84%20Track%20MEMORY%20ALLOCATIONS%20the%20Easy%20way%20in%20C%2B%2B/" class="md-nav__link">
+        84 跟踪内存分配的简单方法
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../85%20lvalues%20and%20rvalues%20in%20C%2B%2B/" class="md-nav__link">
+        85 C++的左值与右值
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../86%20Continuous%20Integration%20in%20C%2B%2B/" class="md-nav__link">
+        86 C++持续集成
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../87%20Static%20Analysis%20in%20C%2B%2B/" class="md-nav__link">
+        87 C++ 静态分析
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../88%20Argument%20Evaluation%20Order%20in%20C%2B%2B/" class="md-nav__link">
+        88 C++的参数计算顺序
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../89%20Move%20Semantics%20in%20C%2B%2B/" class="md-nav__link">
+        89 C++移动语义
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../90%20std--move%20and%20the%20Move%20Assignment%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        90 std::move与移动赋值操作符
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -964,7 +1602,7 @@
       
         <li class="md-nav__item">
   <a href="#1-namespace" class="md-nav__link">
-    1. 为什么要使用namespace
+    1. 为什么要使用 namespace
   </a>
   
 </li>
@@ -986,10 +1624,10 @@
                   </a>
                 
                 
-                  <h1>61 Namespaces in C++</h1>
+                  <h1>61 C++的名称空间</h1>
                 
-                <h2 id="1-namespace">1. 为什么要使用namespace</h2>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">text</span><span class="p">)</span>
+                <h2 id="1-namespace">1. 为什么要使用 namespace</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">text</span><span class="p">)</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
@@ -1001,10 +1639,10 @@
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
 </code></pre></div>
-这里有两个函数签名一样的函数，这两个的<em>symbol</em>（符号)是相同的，如果放在一个文件里的话会产生链接错误、编译错误。那如果我们确实想要两个print函数，或者使用另一个已经定义了print函数的库，但是我们想有自己的print函数。
-C语言没有namespace，比如使用GLFW库（C语言的OpenGL库），调用的每个函数名都是用GLFW开头的。
+<p>这里有两个函数签名一样的函数，这两个的<em>symbol</em>（符号)是相同的，如果放在一个文件里的话会产生链接错误、编译错误。那如果我们确实想要两个 print 函数，或者使用另一个已经定义了 print 函数的库，但是我们想有自己的 print 函数。
+C 语言没有 namespace，比如使用 GLFW 库（C 语言的 OpenGL 库），调用的每个函数名都是用 GLFW 开头的。
 所以<em>namespace</em>（名称空间）的主要目的就是避免命名冲突。</p>
-<p>可以把命名空间放在一行，这样多层嵌套时观感会好些：
+<p>可以把命名空间放在一行，这样多层嵌套时观感会好些：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">apple</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">functions</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">text</span><span class="p">)</span>
@@ -1012,13 +1650,13 @@ C语言没有namespace，比如使用GLFW库（C语言的OpenGL库），调用�
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">}</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div></p>
+</code></pre></div>
 <p><code>::</code>是命名空间的操作符，类也是一种命名空间，这就是为什么访问另一个类内部的类等成员时也用<code>::</code>来调用</p>
 <p>还可以单独引入函数：
-<img alt="" src="Pasted%20image%2020230723174600.png" />
-还可以给命名空间起别名：
-<img alt="" src="Pasted%20image%2020230723175142.png" /></p>
-<p>尽量将namepace限制在一个小的作用域下，一定不要加在头文件里。</p>
+<img alt="" src="../storage%20bag/Pasted%20image%2020230723174600.png" /></p>
+<p>还可以给命名空间起别名：
+<img alt="" src="../storage%20bag/Pasted%20image%2020230723175142.png" /></p>
+<p>尽量将 namepace 限制在一个小的作用域下，一定不要加在头文件里。</p>
                 
               
               
@@ -1039,6 +1677,41 @@ C语言没有namespace，比如使用GLFW库（C语言的OpenGL库），调用�
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../59%20Lambdas%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 59 C++的lambda" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              59 C++的lambda
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../62%20Threads%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 62 C++的线程" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              62 C++的线程
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

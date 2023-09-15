@@ -14,7 +14,7 @@
     
     
       
-        <title>53 Templates in C++ - cherno-cpp-notes</title>
+        <title>53 C++的模板 - cherno-cpp-notes</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              53 Templates in C++
+              53 C++的模板
             
           </span>
         </div>
@@ -361,7 +361,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/12%20CONDITIONS%20and%20BRANCHES%20in%20C%2B%2B/" class="md-nav__link">
-        12 C++条件与分支（if语句）
+        12 C++条件与分支(if语句)
       </a>
     </li>
   
@@ -391,7 +391,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/14%20Loops%20in%20C%2B%2B%28for%2Cwhile%20loops%29/" class="md-nav__link">
-        14 C++循环（for 、while）
+        14 C++循环(for&while)
       </a>
     </li>
   
@@ -526,7 +526,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/23%20Local%20Static%20in%20C%2B%2B/" class="md-nav__link">
-        23 C++中的局部静态（Local Static）
+        23 C++中的局部静态(Local Static)
       </a>
     </li>
   
@@ -616,7 +616,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/29%20Interfaces%20in%20C%2B%2B%20%28Pure%20Virtual%20Functions%29/" class="md-nav__link">
-        29 C++接口（纯虚函数）
+        29 C++接口(纯虚函数)
       </a>
     </li>
   
@@ -826,7 +826,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/" class="md-nav__link">
-        43 C++的对象生存期（栈作用域生存期）
+        43 C++的对象生存期(栈作用域生存期)
       </a>
     </li>
   
@@ -886,7 +886,7 @@
   
     <li class="md-nav__item">
       <a href="../../1-50/47%20Dynamic%20Arrays%20in%20C%2B%2B%20%28std%20-%20-vector%29/" class="md-nav__link">
-        47 C++的动态数组（std::vector)
+        47 C++的动态数组(std::vector)
       </a>
     </li>
   
@@ -932,6 +932,658 @@
     <li class="md-nav__item">
       <a href="../../1-50/50%20Using%20Dynamic%20Libraries%20in%20C%2B%2B/" class="md-nav__link">
         50 C++中使用动态库
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../51%20Making%20and%20Working%20with%20Libraries%20in%20C%2B%2B%20%28Multiple%20Projects%20in%20VS%29/" class="md-nav__link">
+        51 C++中创建与使用库
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../52%20How%20to%20Deal%20with%20Multiple%20Return%20Values%20in%20C%2B%2B/" class="md-nav__link">
+        52 C++中如何处理多返回值
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          53 C++的模板
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        53 C++的模板
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 什么是模板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 创建模板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 哪里用模板？哪里不用
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../54%20Stack%20vs%20Heap%20Memory%20in%20C%2B%2B/" class="md-nav__link">
+        54 C++的堆与栈内存的比较
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../55%20Macros%20in%20C%2B%2B/" class="md-nav__link">
+        55 C++的宏
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../56%20The%20%60auto%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+        56 C++的auto关键字
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../57%20Static%20Arrays%20in%20C%2B%2B%20%28std%20-%20-array%29/" class="md-nav__link">
+        57 C++的静态数组(std array)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../58%20Function%20Pointers%20in%20C%2B%2B/" class="md-nav__link">
+        58 C++的函数指针
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../59%20Lambdas%20in%20C%2B%2B/" class="md-nav__link">
+        59 C++的lambda
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../60 为什么不使用namespace::std: '51-100/60 Why I don't `using namespace std`.md'" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../61%20Namespaces%20in%20C%2B%2B/" class="md-nav__link">
+        61 C++的名称空间
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../62%20Threads%20in%20C%2B%2B/" class="md-nav__link">
+        62 C++的线程
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../63%20Timing%20in%20C%2B%2B/" class="md-nav__link">
+        63 C++的计时
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../64%20Multidimensional%20Arrays%20in%20C%2B%2B%20%282D%20arrays%29/" class="md-nav__link">
+        64 C++多维数组
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../65%20Sorting%20in%20C%2B%2B/" class="md-nav__link">
+        65 C++的排序
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../66%20Type%20Punning%20in%20C%2B%2B/" class="md-nav__link">
+        66 C++的类型双关
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../67%20Unions%20in%20C%2B%2B/" class="md-nav__link">
+        67 C++的联合体
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../68%20Virtual%20Destructors%20in%20C%2B%2B/" class="md-nav__link">
+        68 C++的虚析构函数
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../69%20Casting%20in%20C%2B%2B/" class="md-nav__link">
+        69 C++的类型转换
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../70%20Conditional%20and%20Action%20Breakpoints%20in%20C%2B%2B/" class="md-nav__link">
+        70 条件与操作断点
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../71%20Safety%20in%20modern%20C%2B%2B%20and%20how%20to%20teach%20it/" class="md-nav__link">
+        71 现代C++中的安全以及如何教授(作者个人观点)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../72%20Precompiled%20Headers%20in%20C%2B%2B/" class="md-nav__link">
+        72 C++的预编译头文件
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../73%20Dynamic%20Casting%20in%20C%2B%2B/" class="md-nav__link">
+        73 C++的dynamic_cast
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../74%20BENCHMARKING%20in%20C%2B%2B%20%28how%20to%20measure%20performance%29/" class="md-nav__link">
+        74 C++的基准测试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../75%20STRUCTURED%20BINDINGS%20in%20C%2B%2B/" class="md-nav__link">
+        75 C++的结构化绑定
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../76%20How%20to%20Deal%20with%20OPTIONAL%20Data%20in%20C%2B%2B/" class="md-nav__link">
+        76 如何处理OPTIONAL数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../77%20Multiple%20TYPES%20of%20Data%20in%20a%20SINGLE%20VARIABLE%20in%20C%2B%2B/" class="md-nav__link">
+        77 单一变量存放多类型的数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../78%20How%20to%20store%20ANY%20data%20in%20C%2B%2B/" class="md-nav__link">
+        78 如何存储任意类型的数据
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../79%20How%20to%20make%20C%2B%2B%20run%20FASTER%20%28with%20std-async%29/" class="md-nav__link">
+        79 如何让C++运行得更快
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../80%20How%20to%20make%20your%20STRINGS%20faster/" class="md-nav__link">
+        80 如何让C++字符串更快
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../81%20VISUAL%20BENCHMARKING%20in%20C%2B%2B/" class="md-nav__link">
+        81 C++的可视化基准测试
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../82%20SINGLETONS%20in%20C%2B%2B/" class="md-nav__link">
+        82 C++的单例模式
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../83%20Small%20String%20Optimization%20in%20C%2B%2B/" class="md-nav__link">
+        83 C++的小字符串优化
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../84%20Track%20MEMORY%20ALLOCATIONS%20the%20Easy%20way%20in%20C%2B%2B/" class="md-nav__link">
+        84 跟踪内存分配的简单方法
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../85%20lvalues%20and%20rvalues%20in%20C%2B%2B/" class="md-nav__link">
+        85 C++的左值与右值
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../86%20Continuous%20Integration%20in%20C%2B%2B/" class="md-nav__link">
+        86 C++持续集成
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../87%20Static%20Analysis%20in%20C%2B%2B/" class="md-nav__link">
+        87 C++ 静态分析
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../88%20Argument%20Evaluation%20Order%20in%20C%2B%2B/" class="md-nav__link">
+        88 C++的参数计算顺序
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../89%20Move%20Semantics%20in%20C%2B%2B/" class="md-nav__link">
+        89 C++移动语义
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../90%20std--move%20and%20the%20Move%20Assignment%20Operator%20in%20C%2B%2B/" class="md-nav__link">
+        90 std::move与移动赋值操作符
       </a>
     </li>
   
@@ -1000,12 +1652,12 @@
                   </a>
                 
                 
-                  <h1>53 Templates in C++</h1>
+                  <h1>53 C++的模板</h1>
                 
                 <h2 id="1">1. 什么是模板</h2>
 <p>C++中的<em>templates</em>（模板）要比其它语言中的泛型要更强大。模板有点像<em>macro</em>（宏），可以让做基本任何事。而泛型却非常受制于类型系统和其它因素。</p>
 <p>模板允许你定义一个根据你的用途进行编译的模板，你可以让编译器基于一套规则帮你写代码。例如我写一个函数时，可以在这里面使用模板，我实际做的类似创建了一个<em>blueprint</em>（蓝图），当我决定要调用这个函数时，我可以根据我要如何使用这个函数来指定特定的参数，这个参数决定了要放入到模板中的实际代码。</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kt">void</span><span class="w"> </span><span class="nf">Print</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">)</span>
@@ -1026,22 +1678,22 @@
 <a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">}</span>
 </code></pre></div>
-我们最终要手动定义三个Print重载函数，如果我们只需要定义一次这个函数呢？</p>
+<p>我们最终要手动定义三个 Print 重载函数，如果我们只需要定义一次这个函数呢？</p>
 <h2 id="2">2. 创建模板</h2>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span><span class="w">  </span><span class="c1">// 通常叫T</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span><span class="w">  </span><span class="c1">// 通常叫T</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">void</span><span class="w"> </span><span class="n">Print</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">value</span><span class="p">)</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">{</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">}</span>
 </code></pre></div>
-<img alt="" src="Pasted%20image%2020230714153728.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230714153728.png" /></p>
 <p><code>template</code>表明这里定义了一个模板，会在编译阶段被评估，所以这并不是一个真的函数，只有我们实际调用它的时候，这些函数才被真正地创建。</p>
-<p><code>&lt;typename T&gt;</code>是模板参数，这个例子中我们用选择typename作为模板参数的类型，T作为名字，实际上是模板的参数名称，可以替换在例子中出现的类型。
+<p><code>&lt;typename T&gt;</code>是模板参数，这个例子中我们用选择 typename 作为模板参数的类型，T 作为名字，实际上是模板的参数名称，可以替换在例子中出现的类型。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Print</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="mf">5.5f</span><span class="p">);</span><span class="w"> </span><span class="c1">//可以指定类型，这里得到的结果是：5</span>
-</code></pre></div></p>
+</code></pre></div>
 <p>再重复一遍，模板只有在它被调用时才会创建，否则它根本就不存在。你甚至在里面有语法错误，只要不调用都不会影响编译。（视频中的版本是这样的，但目前模板中的错误就算不调用也会影响编译。）</p>
-<p>实际上，编译时会对模板进行填空：
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span><span class="w">  </span>
+<p>实际上，编译时会对模板进行填空：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">void</span><span class="w"> </span><span class="n">Print</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">value</span><span class="p">)</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">{</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
@@ -1051,17 +1703,17 @@
 <a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">{</span>
 <a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
-</code></pre></div></p>
-<p>模板绝不仅仅局限于类或者任何东西，也不会局限于函数，你可以基于模板创建一整个类。而且事实上，大量的C++标准模板库同样完全使用了模板。
-这里有一个例子，这里我们不能用类型作为模板参数:
+</code></pre></div>
+<p>模板绝不仅仅局限于类或者任何东西，也不会局限于函数，你可以基于模板创建一整个类。而且事实上，大量的 C++标准模板库同样完全使用了模板。
+这里有一个例子，这里我们不能用类型作为模板参数:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Array</span><span class="w"> </span><span class="c1">//我想要一个数组，它的大小是在编译时决定的</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">{</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">private</span><span class="o">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">m_Array</span><span class="p">[];</span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">};</span>
 </code></pre></div>
-这里不能直接输入一个变量size之类的，因为这是一个栈分配的数组，所以在编译时就必须知道它，而模板正是在编译时评估处理的。</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="o">&gt;</span>
+<p>这里不能直接输入一个变量 size 之类的，因为这是一个栈分配的数组，所以在编译时就必须知道它，而模板正是在编译时评估处理的。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="o">&gt;</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">Array</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">{</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">private</span><span class="o">:</span>
@@ -1078,8 +1730,8 @@
 <a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
 <a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="p">}</span>
 </code></pre></div>
-所以可以看到，我们不是只能使用类型，我们可以使用整数或者其它的数据类型，来指定我们想要如何生成一个类和整个类。</p>
-<p>让我们刚进一步，我想让数组的类型也是可变的，因此我希望能够在编译时指定这个数组实际包含的类型，我可以添加另一个模板参数。
+<p>所以可以看到，我们不是只能使用类型，我们可以使用整数或者其它的数据类型，来指定我们想要如何生成一个类和整个类。</p>
+<p>让我们刚进一步，我想让数组的类型也是可变的，因此我希望能够在编译时指定这个数组实际包含的类型，我可以添加另一个模板参数。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="o">&gt;</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">Array</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">{</span>
@@ -1090,15 +1742,15 @@
 <a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">};</span>
 <a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
 <a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1">// 调用</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">Array</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="mi">5</span><span class="o">&gt;</span><span class="w"> </span><span class="n">array0</span><span class="p">;</span><span class="w">  </span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">Array</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="mi">5</span><span class="o">&gt;</span><span class="w"> </span><span class="n">array0</span><span class="p">;</span>
 <a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">Arary</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="mi">50</span><span class="o">&gt;</span><span class="w"> </span><span class="n">array1</span><span class="p">;</span>
 </code></pre></div>
-可以看到我们创建的是一个可以自动创建的类，实际上这里与标准数组类在C++标准模板库中的工作方式非常相似（有2个模板参数，type和size）。这有点像是C++的<em>meta programming</em>（元编程），相较于代码运行时的实际编程，我们像是在编译器在编译时进行编程。</p>
+<p>可以看到我们创建的是一个可以自动创建的类，实际上这里与标准数组类在 C++标准模板库中的工作方式非常相似（有 2 个模板参数，type 和 size）。这有点像是 C++的<em>meta programming</em>（元编程），相较于代码运行时的实际编程，我们像是在编译器在编译时进行编程。</p>
 <h2 id="3">3. 哪里用模板？哪里不用</h2>
 <p>本部分完全是主观的，仅供参考。
 很多游戏工作室或软件公司实际上禁止使用模板，但模板非常有用，比如在日志系统或者其它的使用场景下，你想记录每一种可能的类型，难道你真的要为每个函数都进行重载吗？你可以用模板自动完成，也就是你可以让编译器基于一些规则为你写代码。
 这是说，你可以深入使用模板来做一些很好的事，但如果你的模板变得非常复杂，你开始让它为你生成一个完整的元语言就有点过头了。因为这里有一个平衡点，当模板变得越来越复杂时，没人能搞懂它是做什么的了，你得花大量时间弄清楚哪些代码已经被编译了以及你的模板到底发生了什么而不能工作。这种情况说明你做的过头了。</p>
-<p>Cherno的观点是：手动做一些事，自己写代码实际上会让你和你的团队受益更多，而不是试图创建庞大的模板魔法般地为你做所有事。所以模板不应该被完全禁止，但也不应该滥用。比如游戏引擎的日志系统和材质系统肯定会用到模板，当你有一个可以包含各种不同类型的统一缓冲区时，模板在一定程序上是非常有用的。</p>
+<p>Cherno 的观点是：手动做一些事，自己写代码实际上会让你和你的团队受益更多，而不是试图创建庞大的模板魔法般地为你做所有事。所以模板不应该被完全禁止，但也不应该滥用。比如游戏引擎的日志系统和材质系统肯定会用到模板，当你有一个可以包含各种不同类型的统一缓冲区时，模板在一定程序上是非常有用的。</p>
                 
               
               
@@ -1119,6 +1771,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../52%20How%20to%20Deal%20with%20Multiple%20Return%20Values%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 52 C++中如何处理多返回值" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              52 C++中如何处理多返回值
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../54%20Stack%20vs%20Heap%20Memory%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 54 C++的堆与栈内存的比较" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              54 C++的堆与栈内存的比较
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

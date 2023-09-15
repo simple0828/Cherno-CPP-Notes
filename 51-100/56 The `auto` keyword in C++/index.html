@@ -14,7 +14,7 @@
     
     
       
-        <title>71 现代C++中的安全以及如何教授(作者个人观点) - cherno-cpp-notes</title>
+        <title>56 C++的auto关键字 - cherno-cpp-notes</title>
       
     
     
@@ -66,6 +66,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#1-auto" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              71 现代C++中的安全以及如何教授(作者个人观点)
+              56 C++的auto关键字
             
           </span>
         </div>
@@ -1013,11 +1018,63 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../56%20The%20%60auto%60%20keyword%20in%20C%2B%2B/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          56 C++的auto关键字
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         56 C++的auto关键字
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-auto" class="md-nav__link">
+    1. auto 关键字
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 使用例子
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-auto" class="md-nav__link">
+    3.什么时候适合用 auto？
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1238,19 +1295,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../71%20Safety%20in%20modern%20C%2B%2B%20and%20how%20to%20teach%20it/" class="md-nav__link">
         71 现代C++中的安全以及如何教授(作者个人观点)
       </a>
-      
     </li>
   
 
@@ -1547,35 +1596,146 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-auto" class="md-nav__link">
+    1. auto 关键字
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 使用例子
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-auto" class="md-nav__link">
+    3.什么时候适合用 auto？
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Nagi-ovo/Cherno-CPP-Notes/edit/master/docs/51-100/71 Safety in modern C++ and how to teach it.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/Nagi-ovo/Cherno-CPP-Notes/edit/master/docs/51-100/56 The `auto` keyword in C++.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>71 现代C++中的安全以及如何教授(作者个人观点)</h1>
+                  <h1>56 C++的auto关键字</h1>
                 
-                <p>本节将讨论C++中“安全”意味着什么。</p>
-<p>安全编程，就是在编程中，我们希望降低崩溃、内存泄漏、非法访问等问题。
-随着C++11的到来，Cherno想说的是应该转向智能指针这样的概念，而不是原始指针。这主要是因为存在内存泄漏以及不知道实际分配或者释放了哪些内存的问题。本节也重点围绕指针和内存，而不是异常或者是其它与安全编程有关的比如错误检查之类的东西。</p>
-<p>当我们开始倾向于<a href="44%20SMART%20POINTERS%20in%20C++.md">智能指针</a>之类的东西时，这一切都可以归结为我想要分配<strong>堆内存</strong>，智能指针和自动内存管理系统的存在使程序员的生活更容易，且更有力，这意味着你不再需要处理某些事情，就算忘记处理了它也会自动为你处理。</p>
-<p>分配内存这件事很简单，你想在堆上分配一块内存，如果你分配成功会得到一个指向那块内存开始部分的有效的指针，它将一直存在，直到你明确地删除它，这就是整个基本概念了。</p>
-<p>那问题就来自几方面了： </p>
-<ul>
-<li>
-<p>如果我<strong><em>忘记释放</em></strong>我的内存会发生什么问题，可能是无害的甚至注意不到，也有内存耗尽灾难性地导致程序崩溃。而“细心一点、做一个好程序员”显然不是一个真正的解决方案，你还是需要考虑更复杂的结构来删除由你自己明确分配的内存。</p>
-</li>
-<li>
-<p>还有<em>ownership</em>（所有权问题），即谁会拥有分配的内存呢？如果我有一个原始指针，指向那块内存，我把它从一个函数传递给另一个函数，从一个类传递给另一个类，谁会<strong>负责管理和清理这些内存</strong>就是<strong><em>所有权问题</em></strong>。你不确定A、B这两个管理那个原始指针的函数哪个最后结束，但是要保证两个函数都能访问那个指针，除非你指明这两个函数运行完后再执行一个清理步骤，但这显然会极大复杂化整个程序，也是我们绝对想避免的。我想要重新分配数据，但我不想要显式地建立一些东西，比如管理所有权或者转义所有权，which会使事情变得非常复杂，你将不得不手动跟踪它。这是另一种所有权问题。</p>
-</li>
-</ul>
-<p>这两大问题就是我们需要自动删除内存的原因，当我们讨论C++的安全问题时，特别是智能指针时，我们只需要自动化一行简单的代码就搞定了内存删除与释放问题，所以你百分之百不应该拒绝使用智能指针，自己构建、修改智能指针也是正常的。</p>
-<p>当然如果只是做一个一百来行的小型sandbox应用，可能用原始指针可读性更好，因为你不关心是否释放了内存，也不关心所有权，你只用写一个<code>*</code>就能让代码会更干净。</p>
-<p>Cherno认为大家应该停止关于“Smart or Raw”的争论，在一个真正的框架环境、真正的应用中，生产代码应该使用智能指针，不这么做是非常愚蠢的举动，大部分典型的问题都可以通过这样解决（可能线程方面有点问题，因为<code>shared_ptr</code>不是线程安全的，使用智能指针还有很多其它约束，所以智能指针不是通用的内存解决方案）。更严肃的代码中完全应该使用智能指针，只是初学C++是需要了解原始指针和内存是如何工作的，因为<a href="44%20SMART%20POINTERS%20in%20C++.md#^a6997e">智能指针只是原始指针上的包装</a>，它们围绕原始指针做了额外的辅助代码，以便自动化所有事情，但本质上只是删除和释放了内存。你必须得知道这一切是如何工作的，这也是为什么Cherno有几课是讲编译器和链接是如何工作的(<a href="06%20How%20the%20C++%20Compiler%20Works.md">06 How the C++ Compiler Works</a>、<a href="07%20How%20the%20C++%20Linker%20Works.md">07 How the C++ Linker Works</a>)</p>
+                <p>有一种方法可以让 C++自动推导出数据的类型，不管是在创建、初始化变量数据时，还是在将一个变量对另一个变量进行赋值时。</p>
+<h2 id="1-auto">1. auto 关键字</h2>
+<p>可以自动推出 b 也是<code>int</code>类型。
+<img alt="" src="../storage%20bag/Pasted%20image%2020230718191950.png" /></p>
+<p>甚至 a 的类型也可以用<code>auto</code>:
+<img alt="" src="../storage%20bag/Pasted%20image%2020230718192644.png" /></p>
+<p>那问题来了，有了<code>auto</code>我还用写类型吗？我可以到处都用它吗？</p>
+<p>这也得归结到编程风格问题上。同时你也需要去思考这种编程风格的优点和缺点。</p>
+<h2 id="2">2. 使用例子</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">GetName</span><span class="p">()</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;Cherno&quot;</span><span class="p">;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetName</span><span class="p">();</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">;</span><span class="w">                   </span><span class="c1">// 如果只是简单赋值，写上类型会更清楚</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">}</span>
+</code></pre></div>
+<p>这里我可以把 name 的类型设为<code>auto</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">auto</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetName</span><span class="p">();</span>
+</code></pre></div>
+<p>这样如果<em>api</em>发生改变时，比如 GetName 的返回类型改为了<code>char*</code>，客户端不需要任何改动。但是坏处是我也不知道 api 已经改变了，它可能会破坏依赖于特定类型的代码。</p>
+<h2 id="3-auto">3.什么时候适合用 auto？</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">strings</span><span class="p">;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="n">strings</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;Apple&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="n">strings</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;Orange&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strings</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="n">it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">strings</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="n">it</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="o">*</span><span class="n">it</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="p">}</span>
+</code></pre></div>
+<p>代码中<em>iterator</em>（迭代器）的类型太长了，可以直接用<code>auto</code>替换以获得更好的可读性：
+<img alt="" src="../storage%20bag/Pasted%20image%2020230718194607.png" /></p>
+<p>另外一个例子：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Device</span><span class="p">{};</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">DeviceManager</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">{</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">private</span><span class="o">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Device</span><span class="o">*&gt;&gt;</span><span class="w"> </span><span class="n">m_Devices</span><span class="p">;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">public</span><span class="o">:</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Device</span><span class="o">*&gt;&gt;&amp;</span><span class="w"> </span><span class="n">GetDevices</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">m_Devices</span><span class="p">;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">};</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="p">{</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="n">DeviceManager</span><span class="w"> </span><span class="n">dm</span><span class="p">;</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Device</span><span class="o">*&gt;&gt;&amp;</span><span class="w"> </span><span class="n">devices</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dm</span><span class="p">.</span><span class="n">GetDevices</span><span class="p">();</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="p">}</span>
+</code></pre></div>
+<p>这里的类型相当大，这里可以做的是用<em>alias</em>（取别名）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">using</span><span class="w"> </span><span class="n">DeviceMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Device</span><span class="o">*&gt;&gt;</span><span class="p">;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="n">DeviceManager</span><span class="w"> </span><span class="n">dm</span><span class="p">;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1">// 或者</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">typedef</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Device</span><span class="o">*&gt;&gt;</span><span class="w"> </span><span class="n">DeviceMap</span><span class="p">;</span>
+</code></pre></div>
+<p>然后可以直接调用了，甚至可以把<code>using</code>部分挪到 DeviceManager 类中：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">const</span><span class="w"> </span><span class="n">DeviceMap</span><span class="o">&amp;</span><span class="w"> </span><span class="n">devices</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dm</span><span class="p">.</span><span class="n">GetDevices</span><span class="p">();</span>
+</code></pre></div>
+<p>这样我就得到了一个简洁且更有意义的类型。</p>
+<p>但如果我不想用这些方法的话，就可以用<code>auto</code>帮助自己了;
+<img alt="" src="../storage%20bag/Pasted%20image%2020230718195835.png" /></p>
+<p>不过要注意的是，<code>auto</code>不处理引用，所以不要漏掉<code>&amp;</code>而造成一次复制。</p>
+<p>这就是真实世界中两个可能比较适合使用<code>auto</code>的场合，比如你的变量类型非常长的话，如果变量类型只是个<code>int</code>你还要用 auto，那只会降低代码的可读性，在我看来没什么好处。</p>
+<p>当进入到更加复杂的代码集，包含模板等，那种情况相当复杂，你不得不使用<code>auto</code>，因为你不知道类型是什么。</p>
                 
               
               
@@ -1600,7 +1760,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../70%20Conditional%20and%20Action%20Breakpoints%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 70 条件与操作断点" rel="prev">
+        <a href="../55%20Macros%20in%20C%2B%2B/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 55 C++的宏" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1609,20 +1769,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              70 条件与操作断点
+              55 C++的宏
             </div>
           </div>
         </a>
       
       
         
-        <a href="../72%20Precompiled%20Headers%20in%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 72 C++的预编译头文件" rel="next">
+        <a href="../57%20Static%20Arrays%20in%20C%2B%2B%20%28std%20-%20-array%29/" class="md-footer__link md-footer__link--next" aria-label="下一页: 57 C++的静态数组(std array)" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              72 C++的预编译头文件
+              57 C++的静态数组(std array)
             </div>
           </div>
           <div class="md-footer__button md-icon">
