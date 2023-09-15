@@ -1856,8 +1856,8 @@
 <p>这里的<code>dynamic_cast</code>试图将基类指针<code>base</code>转换为<code>AnotherClass</code>指针。然而，原始的<code>base</code>指针实际上是指向一个<code>Derived</code>对象的，而非<code>AnotherClass</code>对象。这两个类（<code>Derived</code>和<code>AnotherClass</code>）都是从<code>Base</code>类派生的，但它们是完全不同的类，无法互相转换。</p>
 <p><code>dynamic_cast</code>在运行时执行类型检查。如果类型转换是安全的，那么它就执行转换，否则它返回 null。在这个例子中，因为<code>base</code>指针实际上是指向<code>Derived</code>对象，而不是<code>AnotherClass</code>对象，所以<code>dynamic_cast</code>判断这个转换是不安全的，于是返回 null。</p>
 <p>这种类型检查的能力是<code>dynamic_cast</code>的一个重要特性，它可以在运行时保护我们免于执行不安全的类型转换。这就是为什么<code>ac</code>是 null 的原因。</p>
-<p>改为 Derived 类后，这个指针就是有效的了，因为这个转换是成功的。
-<img alt="" src="../storage%20bag/Pasted%20image%2020230727163921.png" /></p>
+<p>改为 Derived 类后，这个指针就是有效的了，因为这个转换是成功的。</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230727163921.png" /></p>
 <p>这与运行时类型信息<em>RTTI</em>(runtime type information)紧密联系。</p>
 <p>你需要知道这些类型转换操作符对你来说是一种简化类型转换的方法，可能会让转换更可靠，因为它会做编译时检查，而<code>dynamic_cast</code>会做运行时检查。通过使用这样的强制转换操作符，你会得到更坚实的代码。</p>
                 

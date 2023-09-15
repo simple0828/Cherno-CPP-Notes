@@ -1741,14 +1741,14 @@
 <p>Windows 用户可以用 Cygwin 模拟 Unix 环境，或直接使用 Windows 的计时功能：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Measure-Command</span> <span class="p">{</span> <span class="n">g</span><span class="p">++</span> <span class="n">-std</span><span class="p">=</span><span class="n">c</span><span class="p">++</span><span class="n">11</span> <span class="n">Main</span><span class="p">.</span><span class="nb">cpp </span><span class="p">}</span>
 </code></pre></div>
-<p><img alt="" src="../storage%20bag/Pasted%20image%2020230729142217.png" />
-创建预编译文件：</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230729142217.png" /></p>
+<p>创建预编译文件：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">g</span><span class="p">++</span> <span class="n">-std</span><span class="p">=</span><span class="n">c</span><span class="p">++</span><span class="n">11</span> <span class="n">pch</span><span class="p">.</span><span class="nb">h</span>
 </code></pre></div>
 <p>生成了这个 pch.h.gch 文件，是个多达 100MB 的文件</p>
 <p><img alt="" src="../storage%20bag/Pasted%20image%2020230729142104.png" /></p>
-<p>删掉 a.exe，相当于 clean build，再计时：
-<img alt="" src="../storage%20bag/Pasted%20image%2020230729142132.png" /></p>
+<p>删掉 a.exe，相当于 clean build，再计时：</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230729142132.png" /></p>
 <p>可以发现快了六倍左右。</p>
 <h3 id="_1">总结</h3>
 <p>希望这些例子可以带来些启发。

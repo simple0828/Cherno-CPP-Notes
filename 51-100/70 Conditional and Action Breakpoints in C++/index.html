@@ -1665,14 +1665,14 @@
 <li>二是打印一些东西，但仍然中断程序，暂停程序的执行，这样我们就可以检查内存中的其它东西。</li>
 </ul>
 <h2 id="3">3. 现实中的用法</h2>
-<p>右键设置的断点，选择 Conditions 或者 Actions（可以一起使用，打开哪个都可以设置另一个），这里先测试 <em>Action breakpoint</em>：
-<img alt="" src="../storage%20bag/Pasted%20image%2020230728222350.png" /></p>
+<p>右键设置的断点，选择 Conditions 或者 Actions（可以一起使用，打开哪个都可以设置另一个），这里先测试 <em>Action breakpoint</em>：</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230728222350.png" /></p>
 <p>要将变量名写在<code>{}</code>内，还可以做类型转换或者加一些文本（如示例）</p>
 <p><img alt="" src="../storage%20bag/Pasted%20image%2020230728222958.png" /></p>
 <p>你当然也可以通过在源代码中添加代码的方式来打印这些内容，但这里最酷的事情是，你<strong>不需要终止你的应用，不需要重新编译代码</strong>，只是在初始引用程序运行时设法打印了额外的数据到控制台（Output Window），提升了效率。
 另一种方式就是打普通断点，然后看中断的程序再找变量，这样很耗时。</p>
-<p>再测试一下<em>Condition breakpoint</em>：
-<img alt="" src="../storage%20bag/Pasted%20image%2020230728223139.png" /></p>
+<p>再测试一下<em>Condition breakpoint</em>：</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230728223139.png" /></p>
 <p>这里的条件可以是任何布尔语句。</p>
 <p>条件断点也是非常有用的，比如你想在一个循环中找到一个特殊的条件对于普通断点来说是基本不可能的，比如只想在一个特定编号的敌人的节点（出问题的实体）那里中断程序，如果要手工完成你得一直按多次 F5。尽管会降低性能，但是这只是一个调试工具罢了。</p>
                 

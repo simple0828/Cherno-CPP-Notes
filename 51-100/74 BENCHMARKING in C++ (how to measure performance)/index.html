@@ -1737,10 +1737,10 @@
 <a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">    </span><span class="n">__debugbreak</span><span class="p">();</span>
 <a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="p">}</span>
 </code></pre></div>
-<p>测量两次<code>shared_ptr</code>和<code>unique_ptr</code>的性能对比：
-<img alt="" src="../storage%20bag/Pasted%20image%2020230731163728.png" />
-<img alt="" src="../storage%20bag/Pasted%20image%2020230731163913.png" />
-和我们所料的差不多，<code>unique_ptr</code>比<code>shared_ptr</code>花的时间少，但是<code>make_shared</code>和<code>new</code>所差的时间差不多。这里有件很重要的事，我们实际上是在 Debug 模式下分析的，因为它有很多额外的安全措施，需要时间而对测量性能不是很好。</p>
+<p>测量两次<code>shared_ptr</code>和<code>unique_ptr</code>的性能对比：</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230731163728.png" /></p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230731163913.png" /></p>
+<p>和我们所料的差不多，<code>unique_ptr</code>比<code>shared_ptr</code>花的时间少，但是<code>make_shared</code>和<code>new</code>所差的时间差不多。这里有件很重要的事，我们实际上是在 Debug 模式下分析的，因为它有很多额外的安全措施，需要时间而对测量性能不是很好。</p>
 <p>切换到 Release 模式，可以发现<code>make_shared</code>明显比<code>new</code>快：</p>
 <p><img alt="" src="../storage%20bag/Pasted%20image%2020230731164128.png" /></p>
 <p>所以一定要确保你所分析的代码，是在 Release 时真正有意义的，因为你不会在 Debug 时发布代码。</p>

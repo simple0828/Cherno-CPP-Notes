@@ -1593,8 +1593,8 @@
 </code></pre></div>
 <p>很可能已经猜到运行结果了：
 创建和删除 Base 类时只会调用 Base 类的构造和析构函数;
-对于 Derived 类，首先调用了基类的构造函数，然后是 Derived 类的构造函数，当我们删除时先调用 Derived 类的析构函数，再调用基类 Base 类的析构函数。
-<img alt="" src="../storage%20bag/Pasted%20image%2020230726214116.png" /></p>
+对于 Derived 类，首先调用了基类的构造函数，然后是 Derived 类的构造函数，当我们删除时先调用 Derived 类的析构函数，再调用基类 Base 类的析构函数。</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230726214116.png" /></p>
 <p>新加入一个多态类型：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;---------------------</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Base</span><span class="o">*</span><span class="w"> </span><span class="n">poly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Derived</span><span class="p">();</span><span class="w"> </span><span class="c1">// 创建一个Derived实例，但是把它赋值给Base类</span>
@@ -1627,8 +1627,8 @@
 <a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">Base</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Base Destructor</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">};</span>
 </code></pre></div>
-<p>这意味着这个类有可能拓展出子类，可能还有一个析构函数也需要被调用：
-<img alt="" src="../storage%20bag/Pasted%20image%2020230726215832.png" /></p>
+<p>这意味着这个类有可能拓展出子类，可能还有一个析构函数也需要被调用：</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230726215832.png" /></p>
 <p>很好，现在有了和第二个例子完全一样的结果，意味着即使我们把它当做多态类型处理（或者说是当做基类类型处理），基类和派生类的析构函数都调用了，那个数组也得到了清理。</p>
 <p>所以当你在写一个要拓展的类或者子类时，只要你允许一个类拥有子类，你 100%需要声明你的析构函数为虚函数，否则无法安全地拓展这个类。</p>
                 

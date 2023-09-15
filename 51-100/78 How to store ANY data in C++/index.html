@@ -1707,8 +1707,8 @@
 </blockquote>
 <p>所以<code>std::any</code>到底做了什么？其实很聪明，对于 <em>small types</em> （小类型），它只是把它门存储为一个<code>union</code>，这意味着对于小类型来说，它的工作方式和<code>std::variant</code>完全相同。</p>
 <p>而如果你有一个大类型，它会带你进入大存储空间的<code>void*</code>，在这种情况下它会动态分配内存，而动态分配内存不利于性能。</p>
-<p>如果你需要更多而存储空间（这里可以看到是&gt;32)，<code>std:any</code>会动态分配，但是<code>std::variant</code>不会。
-<img alt="" src="../storage%20bag/Pasted%20image%2020230802014151.png" /></p>
+<p>如果你需要更多而存储空间（这里可以看到是&gt;32)，<code>std:any</code>会动态分配，但是<code>std::variant</code>不会。</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230802014151.png" /></p>
 <p>所以换句话说，除了更加类型安全和有一点限制性，<code>std::variant</code>在处理较大数据时也会执行得更快，或是你的数据又需要避免动态内存分配。</p>
 <p>另一个提高性能的技巧是不要复制数据，之前代码中有字符串的复制，可以换成通过引用返回：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// 在std::get()中可以直接加一个引用符，但std::any_cast中需要把引用插入到模板参数中，才能很好地优化</span>
