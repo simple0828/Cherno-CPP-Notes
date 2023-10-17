@@ -1607,10 +1607,10 @@
 <p>这是一种优化，效率更高，更快。</p>
 <p>那 Debug 模式下发生了什么导致了分配呢？</p>
 <p><img alt="" src="../storage%20bag/Pasted%20image%2020230806014815.png" /></p>
+<p>如果调试等级为 0，也就是 Release 模式下，只会调用 Fake_allocator，而它其实什么都不做：</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230806014947.png" /></p>
 <blockquote>
-<p>如果调试等级为 0，也就是 Release 模式下，只会调用 Fake_allocator，而它其实什么都不做：
-<img alt="" src="../storage%20bag/Pasted%20image%2020230806014947.png" />
-如果是 Debug 模式就会因这个 proxy_ptr 造成分配。</p>
+<p>如果是 Debug 模式就会因这个 proxy_ptr 造成分配。</p>
 </blockquote>
                 
               
