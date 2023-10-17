@@ -1683,9 +1683,9 @@
                 <p>前面我们学到，<code>new</code>在堆上分配内存，需要<code>delete</code>来删除内存，因为它不会自动地释放内存。而<em>smart pointers</em> (智能指针)是自动化实现这一过程的方式。</p>
 <p>当你调用<code>new</code>的时候，你不需要再调用<code>delete</code>。在很多使用智能指针的情况下你甚至不需要调用<code>new</code>。</p>
 <p>智能指针本质上是一个原始指针的包装：
-当你创建一个智能指针，它会调用<code>new</code>并为你分配内存，然后基于你使用的智能指针类型，这些内存会在某一时刻自动释放。 ^a6997e</p>
+当你创建一个智能指针，它会调用<code>new</code>并为你分配内存，然后基于你使用的智能指针类型，这些内存会在某一时刻自动释放。 </p>
 <h2 id="1-unique_ptr">1. unique_ptr</h2>
-<p><em>unique_ptr</em>是一个<em>scoped pointer</em> (作用域指针)，意味着这个指针超出作用域时，它会被销毁，然后调用<code>delete</code>。见<a href="../43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/#^58d90d">上节课</a> ^f2eddc</p>
+<p><em>unique_ptr</em>是一个<em>scoped pointer</em> (作用域指针)，意味着这个指针超出作用域时，它会被销毁，然后调用<code>delete</code>。见<a href="../43%20Object%20Lifetime%20in%20C%2B%2B%20%28Stack_Scope%20Lifetimes%29/#^58d90d">上节课</a> </p>
 <p>为什么叫它<em>unique</em>指针呢？
 是因为它必须是==<em>唯一</em>==的。你不能复制一个<code>unique_ptr</code>，因为如果你复制一个它，那么你会有两个<code>unique_ptr</code>指向同一块内存。如果其中一个死去，它会释放那段内存，也就是说指向同一块内存的另一个<code>unique_ptr</code>指向了已经被释放的内存。所以你不能复制它。</p>
 <p>你不能像如下一样调用<code>unique_ptr</code>:</p>
