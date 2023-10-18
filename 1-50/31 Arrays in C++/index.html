@@ -1910,12 +1910,12 @@
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
 <a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w">      </span><span class="c1">// 5:元素的数量</span>
 </code></pre></div>
-<p>如果做<code>sizeof(example)</code>的话，会返回整形指针的大小（4），故你只能在栈分配的数组上用这个技巧
-<img alt="" src="../storage%20bag/Pasted%20image%2020230704234722.png" /></p>
+<p>如果做<code>sizeof(example)</code>的话，会返回整形指针的大小（4），故你只能在栈分配的数组上用这个技巧</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230704234722.png" /></p>
 <p>改回<code>int example[5];</code>也能工作，但是你真的不能相信这个方法</p>
 <h4 id="_4">一个重点</h4>
-<p>当你在栈中为数组申请内存时，它必须*是一个编译时就需要知道的常量（以后会有别的方法解决）
-<img alt="" src="../storage%20bag/Pasted%20image%2020230704234937.png" /></p>
+<p>当你在栈中为数组申请内存时，它必须*是一个编译时就需要知道的常量（以后会有别的方法解决）</p>
+<p><img alt="" src="../storage%20bag/Pasted%20image%2020230704234937.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">example</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
